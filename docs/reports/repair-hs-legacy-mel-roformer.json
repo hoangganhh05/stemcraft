@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETED",
+  "model": "model_mel_band_roformer_ep_3005_sdr_11.4360.ckpt",
+  "sample_id": "repair-hs-legacy",
+  "input_path": "samples\\repair-hoa-sua-8s.wav",
+  "result_dir": "results\\repair-hs-legacy",
+  "model_id": "mel-band-roformer-vocal",
+  "checkpoint_sha256": "21b9d0958e35b8ebfbe2afe69bbd5444e5ffe2f5d80ae0d583b833d2f3c0d139",
+  "input_sha256": "c56222cde339341e7d27b3604921b63cf4b93bffe00666788d47c58126c431a0",
+  "inference_config": {
+    "segment_size": 64,
+    "override_model_segment_size": true,
+    "batch_size": 1,
+    "overlap": 1,
+    "pitch_shift": 0
+  },
+  "inference_config_sha256": "39e5427fc4737f63a45085cc0dd62a003cf9e42ec3a1379b78b8a0e0a79a5a0a",
+  "config_sha256": "d9b083b48dfdd0bd10f8a29a9c18777b0419496d938827f48a1db31bf0193aa3",
+  "timeout_seconds": 1800,
+  "rss_limit_mib": 3500,
+  "license_status": "unverified_local_experiment_only",
+  "peak_rss_mib": 2138.1015625,
+  "elapsed_seconds": 169.35899999999856,
+  "exit_code": 0
+}

@@ -1,0 +1,715 @@
+{
+  "input_sha256": "c56222cde339341e7d27b3604921b63cf4b93bffe00666788d47c58126c431a0",
+  "profiles": {
+    "legacy": {
+      "seconds": 169.35899999999856,
+      "peak_rss_mib": 2138.1015625,
+      "inference_config": {
+        "segment_size": 64,
+        "override_model_segment_size": true,
+        "batch_size": 1,
+        "overlap": 1,
+        "pitch_shift": 0
+      },
+      "chunk_starts": [
+        0,
+        27783,
+        55566,
+        83349,
+        111132,
+        138915,
+        166698,
+        194481,
+        222264,
+        250047,
+        277830,
+        305613,
+        333396
+      ],
+      "uncovered_frames": 0
+    },
+    "context4s": {
+      "seconds": 255.38999999999942,
+      "peak_rss_mib": 2010.2578125,
+      "inference_config": {
+        "segment_size": 401,
+        "override_model_segment_size": true,
+        "batch_size": 1,
+        "overlap": 2,
+        "pitch_shift": 0
+      },
+      "chunk_starts": [
+        0,
+        88200,
+        176400,
+        184779
+      ],
+      "uncovered_frames": 0
+    },
+    "context8s": {
+      "seconds": 277.9220000000005,
+      "peak_rss_mib": 2062.74609375,
+      "inference_config": {
+        "segment_size": 801,
+        "override_model_segment_size": true,
+        "batch_size": 1,
+        "overlap": 4,
+        "pitch_shift": 0
+      },
+      "chunk_starts": [
+        0,
+        8379
+      ],
+      "uncovered_frames": 0
+    }
+  },
+  "waveform_diagnostics": {
+    "original": {
+      "frames": 361179,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 1.0,
+      "finite": true,
+      "delta_p99": 0.38189697265625,
+      "joins": [
+        {
+          "time_seconds": 0.63,
+          "jump": 0.0286865234375,
+          "edge_rms": 0.21828562624858475,
+          "neighborhood_rms": 0.210223320841442,
+          "edge_to_neighborhood_rms": 1.0383511466514395
+        },
+        {
+          "time_seconds": 1.26,
+          "jump": 0.010986328125,
+          "edge_rms": 0.11503133257180395,
+          "neighborhood_rms": 0.15190852190590148,
+          "edge_to_neighborhood_rms": 0.757240812619184
+        },
+        {
+          "time_seconds": 1.89,
+          "jump": 0.122100830078125,
+          "edge_rms": 0.16706111750342556,
+          "neighborhood_rms": 0.16452594716842422,
+          "edge_to_neighborhood_rms": 1.0154089393109895
+        },
+        {
+          "time_seconds": 2.52,
+          "jump": 0.086517333984375,
+          "edge_rms": 0.29615631737125303,
+          "neighborhood_rms": 0.3131283640250526,
+          "edge_to_neighborhood_rms": 0.9457984373065556
+        },
+        {
+          "time_seconds": 3.15,
+          "jump": 0.094635009765625,
+          "edge_rms": 0.2568145483374956,
+          "neighborhood_rms": 0.24678875887398424,
+          "edge_to_neighborhood_rms": 1.0406249843358173
+        },
+        {
+          "time_seconds": 3.78,
+          "jump": 0.06475830078125,
+          "edge_rms": 0.17313888363250954,
+          "neighborhood_rms": 0.30706459235671113,
+          "edge_to_neighborhood_rms": 0.5638516714143889
+        },
+        {
+          "time_seconds": 4.41,
+          "jump": 0.02777099609375,
+          "edge_rms": 0.3918815788767317,
+          "neighborhood_rms": 0.37857053792041195,
+          "edge_to_neighborhood_rms": 1.0351613229847225
+        },
+        {
+          "time_seconds": 5.04,
+          "jump": 0.069000244140625,
+          "edge_rms": 0.22982389964723463,
+          "neighborhood_rms": 0.24269842371304998,
+          "edge_to_neighborhood_rms": 0.9469525847393335
+        },
+        {
+          "time_seconds": 5.67,
+          "jump": 0.067626953125,
+          "edge_rms": 0.30822267634241113,
+          "neighborhood_rms": 0.2632743566671412,
+          "edge_to_neighborhood_rms": 1.1707280581530326
+        },
+        {
+          "time_seconds": 6.3,
+          "jump": 0.03277587890625,
+          "edge_rms": 0.2504249205586652,
+          "neighborhood_rms": 0.20524999635664204,
+          "edge_to_neighborhood_rms": 1.2200970767547654
+        },
+        {
+          "time_seconds": 6.93,
+          "jump": 0.150054931640625,
+          "edge_rms": 0.21397814681541794,
+          "neighborhood_rms": 0.21937215838665308,
+          "edge_to_neighborhood_rms": 0.9754115945664902
+        },
+        {
+          "time_seconds": 7.56,
+          "jump": 0.1854248046875,
+          "edge_rms": 0.2061493161908196,
+          "neighborhood_rms": 0.22085949839919664,
+          "edge_to_neighborhood_rms": 0.9333957456437357
+        }
+      ],
+      "median_join_jump_to_local_rms": 0.29618247457469793,
+      "median_midchunk_jump_to_local_rms": 0.1655574302323078
+    },
+    "before_original": {
+      "frames": 361179,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.7921142578125,
+      "finite": true,
+      "delta_p99": 0.2899240112304682,
+      "joins": [
+        {
+          "time_seconds": 0.63,
+          "jump": 0.0909423828125,
+          "edge_rms": 0.1388866332609377,
+          "neighborhood_rms": 0.1262914135981523,
+          "edge_to_neighborhood_rms": 1.099731401398849
+        },
+        {
+          "time_seconds": 1.26,
+          "jump": 0.034881591796875,
+          "edge_rms": 0.08069258554668732,
+          "neighborhood_rms": 0.1250317209941617,
+          "edge_to_neighborhood_rms": 0.6453769083963518
+        },
+        {
+          "time_seconds": 1.89,
+          "jump": 0.01934814453125,
+          "edge_rms": 0.11239519139400414,
+          "neighborhood_rms": 0.11295733731094725,
+          "edge_to_neighborhood_rms": 0.9950233784690264
+        },
+        {
+          "time_seconds": 2.52,
+          "jump": 0.198974609375,
+          "edge_rms": 0.2048650502143015,
+          "neighborhood_rms": 0.18358246451655377,
+          "edge_to_neighborhood_rms": 1.1159292950652628
+        },
+        {
+          "time_seconds": 3.15,
+          "jump": 0.117095947265625,
+          "edge_rms": 0.13089007231831443,
+          "neighborhood_rms": 0.12173231614674627,
+          "edge_to_neighborhood_rms": 1.0752286365810098
+        },
+        {
+          "time_seconds": 3.78,
+          "jump": 0.076629638671875,
+          "edge_rms": 0.12478199344436865,
+          "neighborhood_rms": 0.1317545269527079,
+          "edge_to_neighborhood_rms": 0.9470793628909466
+        },
+        {
+          "time_seconds": 4.41,
+          "jump": 0.078369140625,
+          "edge_rms": 0.12001628783001263,
+          "neighborhood_rms": 0.14163846731824864,
+          "edge_to_neighborhood_rms": 0.8473424635437987
+        },
+        {
+          "time_seconds": 5.04,
+          "jump": 0.089569091796875,
+          "edge_rms": 0.14019804475591688,
+          "neighborhood_rms": 0.1703971085376149,
+          "edge_to_neighborhood_rms": 0.8227724399734658
+        },
+        {
+          "time_seconds": 5.67,
+          "jump": 0.06005859375,
+          "edge_rms": 0.2055240030038905,
+          "neighborhood_rms": 0.17915394297584655,
+          "edge_to_neighborhood_rms": 1.1471921833816359
+        },
+        {
+          "time_seconds": 6.3,
+          "jump": 0.0770263671875,
+          "edge_rms": 0.16283366467635574,
+          "neighborhood_rms": 0.12177099620242807,
+          "edge_to_neighborhood_rms": 1.3372122242119664
+        },
+        {
+          "time_seconds": 6.93,
+          "jump": 0.19183349609375,
+          "edge_rms": 0.1406072694269524,
+          "neighborhood_rms": 0.16419891702420455,
+          "edge_to_neighborhood_rms": 0.8563227576356395
+        },
+        {
+          "time_seconds": 7.56,
+          "jump": 0.111053466796875,
+          "edge_rms": 0.11840755937023502,
+          "neighborhood_rms": 0.13028514774329297,
+          "edge_to_neighborhood_rms": 0.908833903335928
+        }
+      ],
+      "median_join_jump_to_local_rms": 0.6459315055274997,
+      "median_midchunk_jump_to_local_rms": 0.1370811522095145
+    },
+    "before_reproduced": {
+      "frames": 361179,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.7921142578125,
+      "finite": true,
+      "delta_p99": 0.2899240112304682,
+      "joins": [
+        {
+          "time_seconds": 0.63,
+          "jump": 0.0909423828125,
+          "edge_rms": 0.1388866332609377,
+          "neighborhood_rms": 0.1262914135981523,
+          "edge_to_neighborhood_rms": 1.099731401398849
+        },
+        {
+          "time_seconds": 1.26,
+          "jump": 0.034881591796875,
+          "edge_rms": 0.08069258554668732,
+          "neighborhood_rms": 0.1250317209941617,
+          "edge_to_neighborhood_rms": 0.6453769083963518
+        },
+        {
+          "time_seconds": 1.89,
+          "jump": 0.01934814453125,
+          "edge_rms": 0.11239519139400414,
+          "neighborhood_rms": 0.11295733731094725,
+          "edge_to_neighborhood_rms": 0.9950233784690264
+        },
+        {
+          "time_seconds": 2.52,
+          "jump": 0.198974609375,
+          "edge_rms": 0.2048650502143015,
+          "neighborhood_rms": 0.18358246451655377,
+          "edge_to_neighborhood_rms": 1.1159292950652628
+        },
+        {
+          "time_seconds": 3.15,
+          "jump": 0.117095947265625,
+          "edge_rms": 0.13089007231831443,
+          "neighborhood_rms": 0.12173231614674627,
+          "edge_to_neighborhood_rms": 1.0752286365810098
+        },
+        {
+          "time_seconds": 3.78,
+          "jump": 0.076629638671875,
+          "edge_rms": 0.12478199344436865,
+          "neighborhood_rms": 0.1317545269527079,
+          "edge_to_neighborhood_rms": 0.9470793628909466
+        },
+        {
+          "time_seconds": 4.41,
+          "jump": 0.078369140625,
+          "edge_rms": 0.12001628783001263,
+          "neighborhood_rms": 0.14163846731824864,
+          "edge_to_neighborhood_rms": 0.8473424635437987
+        },
+        {
+          "time_seconds": 5.04,
+          "jump": 0.089569091796875,
+          "edge_rms": 0.14019804475591688,
+          "neighborhood_rms": 0.1703971085376149,
+          "edge_to_neighborhood_rms": 0.8227724399734658
+        },
+        {
+          "time_seconds": 5.67,
+          "jump": 0.06005859375,
+          "edge_rms": 0.2055240030038905,
+          "neighborhood_rms": 0.17915394297584655,
+          "edge_to_neighborhood_rms": 1.1471921833816359
+        },
+        {
+          "time_seconds": 6.3,
+          "jump": 0.0770263671875,
+          "edge_rms": 0.16283366467635574,
+          "neighborhood_rms": 0.12177099620242807,
+          "edge_to_neighborhood_rms": 1.3372122242119664
+        },
+        {
+          "time_seconds": 6.93,
+          "jump": 0.19183349609375,
+          "edge_rms": 0.1406072694269524,
+          "neighborhood_rms": 0.16419891702420455,
+          "edge_to_neighborhood_rms": 0.8563227576356395
+        },
+        {
+          "time_seconds": 7.56,
+          "jump": 0.111053466796875,
+          "edge_rms": 0.11840755937023502,
+          "neighborhood_rms": 0.13028514774329297,
+          "edge_to_neighborhood_rms": 0.908833903335928
+        }
+      ],
+      "median_join_jump_to_local_rms": 0.6459315055274997,
+      "median_midchunk_jump_to_local_rms": 0.1370811522095145
+    },
+    "after_context4s": {
+      "frames": 361179,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.8001708984375,
+      "finite": true,
+      "delta_p99": 0.28863525390625,
+      "joins": [
+        {
+          "time_seconds": 0.63,
+          "jump": 0.02313232421875,
+          "edge_rms": 0.14844472990148408,
+          "neighborhood_rms": 0.1376828436889862,
+          "edge_to_neighborhood_rms": 1.0781643226138478
+        },
+        {
+          "time_seconds": 1.26,
+          "jump": 0.016754150390625,
+          "edge_rms": 0.08780616255968073,
+          "neighborhood_rms": 0.12568929756593808,
+          "edge_to_neighborhood_rms": 0.6985969709442968
+        },
+        {
+          "time_seconds": 1.89,
+          "jump": 0.0098876953125,
+          "edge_rms": 0.11656109187686217,
+          "neighborhood_rms": 0.11546555532909582,
+          "edge_to_neighborhood_rms": 1.0094879944468624
+        },
+        {
+          "time_seconds": 2.52,
+          "jump": 0.082611083984375,
+          "edge_rms": 0.20365201898105223,
+          "neighborhood_rms": 0.18333596238114871,
+          "edge_to_neighborhood_rms": 1.1108132650901692
+        },
+        {
+          "time_seconds": 3.15,
+          "jump": 0.07073974609375,
+          "edge_rms": 0.18926379684283579,
+          "neighborhood_rms": 0.17643785917392507,
+          "edge_to_neighborhood_rms": 1.072693795588777
+        },
+        {
+          "time_seconds": 3.78,
+          "jump": 0.012298583984375,
+          "edge_rms": 0.1267416369119815,
+          "neighborhood_rms": 0.13774104784073976,
+          "edge_to_neighborhood_rms": 0.92014427724206
+        },
+        {
+          "time_seconds": 4.41,
+          "jump": 0.0098876953125,
+          "edge_rms": 0.1213396462011548,
+          "neighborhood_rms": 0.13874323966423885,
+          "edge_to_neighborhood_rms": 0.8745625840567003
+        },
+        {
+          "time_seconds": 5.04,
+          "jump": 0.0948486328125,
+          "edge_rms": 0.13227372865396445,
+          "neighborhood_rms": 0.16220412207536766,
+          "edge_to_neighborhood_rms": 0.8154769864140928
+        },
+        {
+          "time_seconds": 5.67,
+          "jump": 0.0234375,
+          "edge_rms": 0.19693527738390268,
+          "neighborhood_rms": 0.16981668078847062,
+          "edge_to_neighborhood_rms": 1.1596933615091198
+        },
+        {
+          "time_seconds": 6.3,
+          "jump": 0.00885009765625,
+          "edge_rms": 0.15456961154211807,
+          "neighborhood_rms": 0.12332730852247607,
+          "edge_to_neighborhood_rms": 1.25332834547304
+        },
+        {
+          "time_seconds": 6.93,
+          "jump": 0.075286865234375,
+          "edge_rms": 0.15076347935885318,
+          "neighborhood_rms": 0.16676086245065905,
+          "edge_to_neighborhood_rms": 0.9040699187044613
+        },
+        {
+          "time_seconds": 7.56,
+          "jump": 0.009124755859375,
+          "edge_rms": 0.1343164259701675,
+          "neighborhood_rms": 0.1382420534738203,
+          "edge_to_neighborhood_rms": 0.9716032321207076
+        }
+      ],
+      "median_join_jump_to_local_rms": 0.13742120352918955,
+      "median_midchunk_jump_to_local_rms": 0.17385175742154857
+    },
+    "after_context8s": {
+      "frames": 361179,
+      "sample_rate": 44100,
+      "channels": 2,
+      "peak": 0.8046875,
+      "finite": true,
+      "delta_p99": 0.29057189941406136,
+      "joins": [
+        {
+          "time_seconds": 0.63,
+          "jump": 0.0264892578125,
+          "edge_rms": 0.14936282257429773,
+          "neighborhood_rms": 0.1384109116186518,
+          "edge_to_neighborhood_rms": 1.079126066200767
+        },
+        {
+          "time_seconds": 1.26,
+          "jump": 0.0166015625,
+          "edge_rms": 0.08826291989374764,
+          "neighborhood_rms": 0.12594621047228363,
+          "edge_to_neighborhood_rms": 0.7007985358413878
+        },
+        {
+          "time_seconds": 1.89,
+          "jump": 0.009979248046875,
+          "edge_rms": 0.11683595333678057,
+          "neighborhood_rms": 0.11569508382406649,
+          "edge_to_neighborhood_rms": 1.0098610025163124
+        },
+        {
+          "time_seconds": 2.52,
+          "jump": 0.081207275390625,
+          "edge_rms": 0.20244820585805212,
+          "neighborhood_rms": 0.18183259848320035,
+          "edge_to_neighborhood_rms": 1.113376850723257
+        },
+        {
+          "time_seconds": 3.15,
+          "jump": 0.071441650390625,
+          "edge_rms": 0.18921114666900093,
+          "neighborhood_rms": 0.17608922327504914,
+          "edge_to_neighborhood_rms": 1.0745186056812546
+        },
+        {
+          "time_seconds": 3.78,
+          "jump": 0.011749267578125,
+          "edge_rms": 0.1267510814890436,
+          "neighborhood_rms": 0.13833051338958655,
+          "edge_to_neighborhood_rms": 0.9162915569616137
+        },
+        {
+          "time_seconds": 4.41,
+          "jump": 0.009246826171875,
+          "edge_rms": 0.121469215182484,
+          "neighborhood_rms": 0.13796894917774577,
+          "edge_to_neighborhood_rms": 0.8804098016720768
+        },
+        {
+          "time_seconds": 5.04,
+          "jump": 0.08978271484375,
+          "edge_rms": 0.12890674516648873,
+          "neighborhood_rms": 0.16133368885340788,
+          "edge_to_neighborhood_rms": 0.7990069903107271
+        },
+        {
+          "time_seconds": 5.67,
+          "jump": 0.01898193359375,
+          "edge_rms": 0.196335723792603,
+          "neighborhood_rms": 0.1686692652122775,
+          "edge_to_neighborhood_rms": 1.1640278597615639
+        },
+        {
+          "time_seconds": 6.3,
+          "jump": 0.007537841796875,
+          "edge_rms": 0.1543856641671074,
+          "neighborhood_rms": 0.12397491112965264,
+          "edge_to_neighborhood_rms": 1.245297639339715
+        },
+        {
+          "time_seconds": 6.93,
+          "jump": 0.043670654296875,
+          "edge_rms": 0.1466779773851504,
+          "neighborhood_rms": 0.1644781507745497,
+          "edge_to_neighborhood_rms": 0.8917778847489719
+        },
+        {
+          "time_seconds": 7.56,
+          "jump": 0.006988525390625,
+          "edge_rms": 0.1354488329075063,
+          "neighborhood_rms": 0.14167104511843542,
+          "edge_to_neighborhood_rms": 0.9560798594679145
+        }
+      ],
+      "median_join_jump_to_local_rms": 0.13701469938140634,
+      "median_midchunk_jump_to_local_rms": 0.1639649991664941
+    }
+  },
+  "new_grid_comparison": {
+    "context4s": {
+      "original": {
+        "frames": 361179,
+        "sample_rate": 44100,
+        "channels": 2,
+        "peak": 1.0,
+        "finite": true,
+        "delta_p99": 0.38189697265625,
+        "joins": [
+          {
+            "time_seconds": 2.0,
+            "jump": 0.14556884765625,
+            "edge_rms": 0.16274559316797663,
+            "neighborhood_rms": 0.20478025506898143,
+            "edge_to_neighborhood_rms": 0.7947328374659697
+          },
+          {
+            "time_seconds": 4.0,
+            "jump": 0.049224853515625,
+            "edge_rms": 0.36672581532450443,
+            "neighborhood_rms": 0.3534453244181932,
+            "edge_to_neighborhood_rms": 1.0375743855946382
+          },
+          {
+            "time_seconds": 4.19,
+            "jump": 0.0592041015625,
+            "edge_rms": 0.3805090465613458,
+            "neighborhood_rms": 0.3711416378222213,
+            "edge_to_neighborhood_rms": 1.025239444418283
+          }
+        ],
+        "median_join_jump_to_local_rms": 0.15559183703390633,
+        "median_midchunk_jump_to_local_rms": 0.2967023024057529
+      },
+      "before": {
+        "frames": 361179,
+        "sample_rate": 44100,
+        "channels": 2,
+        "peak": 0.7921142578125,
+        "finite": true,
+        "delta_p99": 0.2899240112304682,
+        "joins": [
+          {
+            "time_seconds": 2.0,
+            "jump": 0.00640869140625,
+            "edge_rms": 0.055566266635916566,
+            "neighborhood_rms": 0.1493964135944953,
+            "edge_to_neighborhood_rms": 0.3719384240825174
+          },
+          {
+            "time_seconds": 4.0,
+            "jump": 0.02032470703125,
+            "edge_rms": 0.2028137469354213,
+            "neighborhood_rms": 0.15055801506590055,
+            "edge_to_neighborhood_rms": 1.347080371952619
+          },
+          {
+            "time_seconds": 4.19,
+            "jump": 0.0137939453125,
+            "edge_rms": 0.13321023260597717,
+            "neighborhood_rms": 0.13746521006121318,
+            "edge_to_neighborhood_rms": 0.9690468777275263
+          }
+        ],
+        "median_join_jump_to_local_rms": 0.10355019312443617,
+        "median_midchunk_jump_to_local_rms": 0.37710419036107695
+      },
+      "after": {
+        "frames": 361179,
+        "sample_rate": 44100,
+        "channels": 2,
+        "peak": 0.8001708984375,
+        "finite": true,
+        "delta_p99": 0.28863525390625,
+        "joins": [
+          {
+            "time_seconds": 2.0,
+            "jump": 0.010589599609375,
+            "edge_rms": 0.05625118709003851,
+            "neighborhood_rms": 0.14969808717537636,
+            "edge_to_neighborhood_rms": 0.3757642342092077
+          },
+          {
+            "time_seconds": 4.0,
+            "jump": 0.02484130859375,
+            "edge_rms": 0.1992496342448212,
+            "neighborhood_rms": 0.1489363168369216,
+            "edge_to_neighborhood_rms": 1.3378176557366486
+          },
+          {
+            "time_seconds": 4.19,
+            "jump": 0.034027099609375,
+            "edge_rms": 0.135944905984448,
+            "neighborhood_rms": 0.14047323299331532,
+            "edge_to_neighborhood_rms": 0.9677637731233621
+          }
+        ],
+        "median_join_jump_to_local_rms": 0.18825557569878032,
+        "median_midchunk_jump_to_local_rms": 0.38701328499285287
+      }
+    },
+    "context8s": {
+      "original": {
+        "frames": 361179,
+        "sample_rate": 44100,
+        "channels": 2,
+        "peak": 1.0,
+        "finite": true,
+        "delta_p99": 0.38189697265625,
+        "joins": [
+          {
+            "time_seconds": 0.19,
+            "jump": 0.072357177734375,
+            "edge_rms": 0.18574914082234642,
+            "neighborhood_rms": 0.19452132084917792,
+            "edge_to_neighborhood_rms": 0.9549037607366804
+          }
+        ],
+        "median_join_jump_to_local_rms": 0.38954246256018277,
+        "median_midchunk_jump_to_local_rms": 0.28628650107705345
+      },
+      "before": {
+        "frames": 361179,
+        "sample_rate": 44100,
+        "channels": 2,
+        "peak": 0.7921142578125,
+        "finite": true,
+        "delta_p99": 0.2899240112304682,
+        "joins": [
+          {
+            "time_seconds": 0.19,
+            "jump": 0.03729248046875,
+            "edge_rms": 0.14723428255361998,
+            "neighborhood_rms": 0.15523896748268173,
+            "edge_to_neighborhood_rms": 0.9484363684011571
+          }
+        ],
+        "median_join_jump_to_local_rms": 0.25328666545557266,
+        "median_midchunk_jump_to_local_rms": 0.29502445618692896
+      },
+      "after": {
+        "frames": 361179,
+        "sample_rate": 44100,
+        "channels": 2,
+        "peak": 0.8046875,
+        "finite": true,
+        "delta_p99": 0.29057189941406136,
+        "joins": [
+          {
+            "time_seconds": 0.19,
+            "jump": 0.029205322265625,
+            "edge_rms": 0.14670406486403065,
+            "neighborhood_rms": 0.15413784051499163,
+            "edge_to_neighborhood_rms": 0.951771896984388
+          }
+        ],
+        "median_join_jump_to_local_rms": 0.1990764352214323,
+        "median_midchunk_jump_to_local_rms": 0.29300701880820396
+      }
+    }
+  },
+  "reproduction": {
+    "linear_gain": 1.0,
+    "normalized_dot": 1.0,
+    "residual_rms": 0.0
+  }
+}

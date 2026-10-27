@@ -1,0 +1,10 @@
+﻿[
+    {
+        "name":  "README.rd",
+        "type":  "file"
+    },
+    {
+        "name":  "update_patches.txt",
+        "type":  "file"
+    }
+]

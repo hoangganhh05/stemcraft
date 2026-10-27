@@ -1,0 +1,14 @@
+﻿{
+    "gpu":  {
+                "Name":  "Intel(R) HD Graphics 530",
+                "AdapterRAM":  1073741824
+            },
+    "cpu":  {
+                "Name":  "Intel(R) Core(TM) i5-6440HQ CPU @ 2.60GHz",
+                "NumberOfCores":  4,
+                "NumberOfLogicalProcessors":  4
+            },
+    "ram":  {
+                "TotalPhysicalMemory":  8465235968
+            }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "FAILED",
+  "scope": "One-second technical integration, not quality evaluation",
+  "profileId": "mel-viperx1143-context8s-cpu",
+  "jobId": "27f19fdf-086a-4d3d-bebf-4955d3bafbbd",
+  "error": "Worker failed: WORKER_INTERRUPTED",
+  "elapsedSeconds": 97.531
+}

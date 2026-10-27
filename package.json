@@ -1,0 +1,38 @@
+{
+  "name": "stemcraft",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Local AI vocal and instrumental separation with Express, MySQL and Python",
+  "scripts": {
+    "check:environment": "node scripts/check-environment.mjs",
+    "lint": "eslint .",
+    "format": "prettier --write \"scripts/**/*.mjs\" \"backend/**/*.mjs\" eslint.config.mjs package.json .prettierrc.json",
+    "format:check": "prettier --check \"scripts/**/*.mjs\" \"backend/**/*.mjs\" eslint.config.mjs package.json .prettierrc.json",
+    "test": "node --test scripts/foundation.test.mjs",
+    "test:python": ".venv\\Scripts\\python.exe -m unittest discover -s ai-worker -p test_validate_samples.py -v",
+    "check:ai": "node scripts/validate-ai-profile.mjs",
+    "dev:backend": "node backend/src/server.mjs",
+    "db:generate": "prisma generate --schema backend/prisma/schema.prisma",
+    "db:init": "node scripts/init-dev-database.mjs",
+    "db:migrate": "prisma migrate deploy --schema backend/prisma/schema.prisma",
+    "db:validate": "prisma validate --schema backend/prisma/schema.prisma",
+    "test:backend": "node scripts/test-backend.mjs",
+    "verify:backend-ai": "node scripts/verify-backend-ai.mjs --run",
+    "test:worker": ".venv\\Scripts\\python.exe -m unittest discover -s ai-worker -p test_job_worker.py -v",
+    "check": "npm run lint && npm run format:check && npm test && node scripts/validate-preparation.mjs && npm run check:ai"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.13.0",
+    "globals": "17.13.0",
+    "prettier": "3.9.10",
+    "prisma": "6.19.3"
+  },
+  "dependencies": {
+    "@prisma/client": "6.19.3",
+    "express": "5.3.0",
+    "express-rate-limit": "8.7.1",
+    "helmet": "8.3.0",
+    "multer": "2.5.0"
+  }
+}

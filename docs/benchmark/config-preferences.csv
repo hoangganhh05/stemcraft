@@ -1,0 +1,2 @@
+date,sample_id,rater_id,evaluation_type,preferred_profile,comparison_profile,feedback,criterion_scores_supplied
+2026-10-27,repair-hoa-sua-8s,user-001,labeled_before_after,context8s,context4s,thấy 8 giây nó liền mạch hơn,false

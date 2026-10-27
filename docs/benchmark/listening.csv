@@ -1,0 +1,2 @@
+blind_id,sample_id,rater_id,naturalness_1_5,low_bleed_1_5,low_artifacts_1_5,syllable_preservation_1_5,remix_usability_1_5,notes
+A,smoke-001,user-001,,,,,,User prefers A over B; no criterion scores supplied; mapping revealed after preference

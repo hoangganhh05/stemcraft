@@ -1,0 +1,8 @@
+{
+  "status": "FAILED",
+  "scope": "One-second technical integration, not quality evaluation",
+  "profileId": "mel-viperx1143-context8s-cpu",
+  "jobId": "9ffc243d-8340-4e78-afea-c343fff5dd7c",
+  "error": "Worker failed: MEMORY_LIMIT",
+  "elapsedSeconds": 67.133
+}

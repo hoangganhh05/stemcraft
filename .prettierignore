@@ -1,0 +1,10 @@
+.cache/
+.tools/
+.venv/
+models/
+results/
+samples/
+storage/
+node_modules/
+docs/reports/*.json
+package-lock.json

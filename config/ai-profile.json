@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "mel-viperx1143-context8s-cpu",
+  "scope": "local_development",
+  "model_id": "mel-band-roformer-vocal",
+  "fallback_model_id": null,
+  "checkpoint_filename": "model_mel_band_roformer_ep_3005_sdr_11.4360.ckpt",
+  "checkpoint_sha256": "21b9d0958e35b8ebfbe2afe69bbd5444e5ffe2f5d80ae0d583b833d2f3c0d139",
+  "yaml_sha256": "d9b083b48dfdd0bd10f8a29a9c18777b0419496d938827f48a1db31bf0193aa3",
+  "device": "cpu",
+  "precision": "fp32",
+  "threads": 2,
+  "worker_concurrency": 1,
+  "sample_rate": 44100,
+  "channels": 2,
+  "output_format": "WAV",
+  "normalization_threshold": 0.9,
+  "denoise": false,
+  "dereverb": false,
+  "inference_config": {
+    "segment_size": 801,
+    "override_model_segment_size": true,
+    "batch_size": 1,
+    "overlap": 4,
+    "pitch_shift": 0
+  },
+  "evidence_report": "docs/reports/repair-hs-context8s-long25-mel-roformer.json",
+  "accepted_sample_seconds": 25,
+  "quality_accepted_by_user": true,
+  "extended_benchmark_waived_by_user": true,
+  "public_release_ready": false
+}

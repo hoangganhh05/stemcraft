@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETED",
+  "model": "model_bs_roformer_ep_317_sdr_12.9755.ckpt",
+  "checkpoint_sha256": "5b84f37e8d444c8cb30c79d77f613a41c05868ff9c9ac6c7049c00aefae115aa",
+  "input_sha256": "8aa9e1955fd11e5c013374d6fd354de3793cf528e2cb7d746a81b27f8a9b5df0",
+  "inference_config": {
+    "segment_size": 64,
+    "override_model_segment_size": true,
+    "batch_size": 1,
+    "overlap": 1,
+    "pitch_shift": 0
+  },
+  "inference_config_sha256": "39e5427fc4737f63a45085cc0dd62a003cf9e42ec3a1379b78b8a0e0a79a5a0a",
+  "config_sha256": "2bfdd16c656bd9519aba757cc4f8834b7ede675eb1e00ec4772d74ae1c41af7f",
+  "timeout_seconds": 900,
+  "rss_limit_mib": 3500,
+  "license_status": "unverified_local_experiment_only",
+  "peak_rss_mib": 1483.39453125,
+  "exit_code": 0,
+  "elapsed_seconds": 472.67199999999957
+}

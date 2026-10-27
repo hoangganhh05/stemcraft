@@ -1,0 +1,857 @@
+{
+  "original": {
+    "frames": 1102500,
+    "sample_rate": 44100,
+    "channels": 2,
+    "peak": 1.0,
+    "finite": true,
+    "delta_p99": 0.3507080078125,
+    "joins": [
+      {
+        "time_seconds": 0.63,
+        "jump": 0.076446533203125,
+        "edge_rms": 0.2403054875472055,
+        "neighborhood_rms": 0.19774162966806336,
+        "edge_to_neighborhood_rms": 1.2152498588718594
+      },
+      {
+        "time_seconds": 1.26,
+        "jump": 0.0255126953125,
+        "edge_rms": 0.1313776023953769,
+        "neighborhood_rms": 0.09285326858914766,
+        "edge_to_neighborhood_rms": 1.4148947515966264
+      },
+      {
+        "time_seconds": 1.89,
+        "jump": 0.0201416015625,
+        "edge_rms": 0.2272968006616876,
+        "neighborhood_rms": 0.3197916646060806,
+        "edge_to_neighborhood_rms": 0.7107652444339717
+      },
+      {
+        "time_seconds": 2.52,
+        "jump": 0.106292724609375,
+        "edge_rms": 0.2345983122552756,
+        "neighborhood_rms": 0.22076350304367426,
+        "edge_to_neighborhood_rms": 1.0626680090724252
+      },
+      {
+        "time_seconds": 3.15,
+        "jump": 0.0283203125,
+        "edge_rms": 0.13941731474097532,
+        "neighborhood_rms": 0.24652664681505024,
+        "edge_to_neighborhood_rms": 0.5655263499591153
+      },
+      {
+        "time_seconds": 3.78,
+        "jump": 0.02923583984375,
+        "edge_rms": 0.299566305307741,
+        "neighborhood_rms": 0.27790943171569377,
+        "edge_to_neighborhood_rms": 1.0779278107200139
+      },
+      {
+        "time_seconds": 4.41,
+        "jump": 0.169586181640625,
+        "edge_rms": 0.20906827808155248,
+        "neighborhood_rms": 0.2229958434288184,
+        "edge_to_neighborhood_rms": 0.9375433858626532
+      },
+      {
+        "time_seconds": 5.04,
+        "jump": 0.0286865234375,
+        "edge_rms": 0.21828562624858475,
+        "neighborhood_rms": 0.210223320841442,
+        "edge_to_neighborhood_rms": 1.0383511466514395
+      },
+      {
+        "time_seconds": 5.67,
+        "jump": 0.010986328125,
+        "edge_rms": 0.11503133257180395,
+        "neighborhood_rms": 0.15190852190590148,
+        "edge_to_neighborhood_rms": 0.757240812619184
+      },
+      {
+        "time_seconds": 6.3,
+        "jump": 0.122100830078125,
+        "edge_rms": 0.16706111750342556,
+        "neighborhood_rms": 0.16452594716842422,
+        "edge_to_neighborhood_rms": 1.0154089393109895
+      },
+      {
+        "time_seconds": 6.93,
+        "jump": 0.086517333984375,
+        "edge_rms": 0.29615631737125303,
+        "neighborhood_rms": 0.3131283640250526,
+        "edge_to_neighborhood_rms": 0.9457984373065556
+      },
+      {
+        "time_seconds": 7.56,
+        "jump": 0.094635009765625,
+        "edge_rms": 0.2568145483374956,
+        "neighborhood_rms": 0.24678875887398424,
+        "edge_to_neighborhood_rms": 1.0406249843358173
+      },
+      {
+        "time_seconds": 8.19,
+        "jump": 0.06475830078125,
+        "edge_rms": 0.17313888363250954,
+        "neighborhood_rms": 0.30706459235671113,
+        "edge_to_neighborhood_rms": 0.5638516714143889
+      },
+      {
+        "time_seconds": 8.82,
+        "jump": 0.02777099609375,
+        "edge_rms": 0.3918815788767317,
+        "neighborhood_rms": 0.37857053792041195,
+        "edge_to_neighborhood_rms": 1.0351613229847225
+      },
+      {
+        "time_seconds": 9.45,
+        "jump": 0.069000244140625,
+        "edge_rms": 0.22982389964723463,
+        "neighborhood_rms": 0.24269842371304998,
+        "edge_to_neighborhood_rms": 0.9469525847393335
+      },
+      {
+        "time_seconds": 10.08,
+        "jump": 0.067626953125,
+        "edge_rms": 0.30822267634241113,
+        "neighborhood_rms": 0.2632743566671412,
+        "edge_to_neighborhood_rms": 1.1707280581530326
+      },
+      {
+        "time_seconds": 10.71,
+        "jump": 0.03277587890625,
+        "edge_rms": 0.2504249205586652,
+        "neighborhood_rms": 0.20524999635664204,
+        "edge_to_neighborhood_rms": 1.2200970767547654
+      },
+      {
+        "time_seconds": 11.34,
+        "jump": 0.150054931640625,
+        "edge_rms": 0.21397814681541794,
+        "neighborhood_rms": 0.21937215838665308,
+        "edge_to_neighborhood_rms": 0.9754115945664902
+      },
+      {
+        "time_seconds": 11.97,
+        "jump": 0.1854248046875,
+        "edge_rms": 0.2061493161908196,
+        "neighborhood_rms": 0.22085949839919664,
+        "edge_to_neighborhood_rms": 0.9333957456437357
+      },
+      {
+        "time_seconds": 12.6,
+        "jump": 0.03302001953125,
+        "edge_rms": 0.21837712963920491,
+        "neighborhood_rms": 0.2270200796032406,
+        "edge_to_neighborhood_rms": 0.9619286982052828
+      },
+      {
+        "time_seconds": 13.23,
+        "jump": 0.045440673828125,
+        "edge_rms": 0.21578423964902355,
+        "neighborhood_rms": 0.23058529068327313,
+        "edge_to_neighborhood_rms": 0.9358109487799897
+      },
+      {
+        "time_seconds": 13.86,
+        "jump": 0.030120849609375,
+        "edge_rms": 0.17607210256262515,
+        "neighborhood_rms": 0.17894948458502682,
+        "edge_to_neighborhood_rms": 0.9839207023754545
+      },
+      {
+        "time_seconds": 14.49,
+        "jump": 0.017730712890625,
+        "edge_rms": 0.17900972957118355,
+        "neighborhood_rms": 0.1786586962471029,
+        "edge_to_neighborhood_rms": 1.0019648264061836
+      },
+      {
+        "time_seconds": 15.12,
+        "jump": 0.00970458984375,
+        "edge_rms": 0.1369148874863705,
+        "neighborhood_rms": 0.134874350405621,
+        "edge_to_neighborhood_rms": 1.0151291707771921
+      },
+      {
+        "time_seconds": 15.75,
+        "jump": 0.0494384765625,
+        "edge_rms": 0.14457556732091342,
+        "neighborhood_rms": 0.14877834566471188,
+        "edge_to_neighborhood_rms": 0.9717514109662849
+      },
+      {
+        "time_seconds": 16.38,
+        "jump": 0.16424560546875,
+        "edge_rms": 0.28418512561113374,
+        "neighborhood_rms": 0.2803139927394958,
+        "edge_to_neighborhood_rms": 1.0138099879845652
+      },
+      {
+        "time_seconds": 17.01,
+        "jump": 0.010650634765625,
+        "edge_rms": 0.26803690009234155,
+        "neighborhood_rms": 0.27187054076563977,
+        "edge_to_neighborhood_rms": 0.9858990214147442
+      },
+      {
+        "time_seconds": 17.64,
+        "jump": 0.01416015625,
+        "edge_rms": 0.24082827232489112,
+        "neighborhood_rms": 0.21392587659043852,
+        "edge_to_neighborhood_rms": 1.1257556877327062
+      },
+      {
+        "time_seconds": 18.27,
+        "jump": 0.052215576171875,
+        "edge_rms": 0.30897174074741546,
+        "neighborhood_rms": 0.2807057981488219,
+        "edge_to_neighborhood_rms": 1.1006959698908956
+      },
+      {
+        "time_seconds": 18.9,
+        "jump": 0.00933837890625,
+        "edge_rms": 0.26021958014393703,
+        "neighborhood_rms": 0.2514265309496817,
+        "edge_to_neighborhood_rms": 1.0349726385717628
+      },
+      {
+        "time_seconds": 19.53,
+        "jump": 0.026214599609375,
+        "edge_rms": 0.27609693101516025,
+        "neighborhood_rms": 0.2756853344211151,
+        "edge_to_neighborhood_rms": 1.0014929941591177
+      },
+      {
+        "time_seconds": 20.16,
+        "jump": 0.024627685546875,
+        "edge_rms": 0.24172444584131125,
+        "neighborhood_rms": 0.25770932919219713,
+        "edge_to_neighborhood_rms": 0.9379732064764931
+      },
+      {
+        "time_seconds": 20.79,
+        "jump": 0.025146484375,
+        "edge_rms": 0.3074709167636849,
+        "neighborhood_rms": 0.2540264040317739,
+        "edge_to_neighborhood_rms": 1.2103895968437441
+      },
+      {
+        "time_seconds": 21.42,
+        "jump": 0.07232666015625,
+        "edge_rms": 0.23639432861807394,
+        "neighborhood_rms": 0.22134607304703033,
+        "edge_to_neighborhood_rms": 1.0679851933395097
+      },
+      {
+        "time_seconds": 22.05,
+        "jump": 0.02642822265625,
+        "edge_rms": 0.1912933678996508,
+        "neighborhood_rms": 0.1757025556624704,
+        "edge_to_neighborhood_rms": 1.0887341232937486
+      },
+      {
+        "time_seconds": 22.68,
+        "jump": 0.20660400390625,
+        "edge_rms": 0.14701779912632323,
+        "neighborhood_rms": 0.15625854662257957,
+        "edge_to_neighborhood_rms": 0.9408624507523672
+      },
+      {
+        "time_seconds": 23.31,
+        "jump": 0.195526123046875,
+        "edge_rms": 0.22659904295530486,
+        "neighborhood_rms": 0.25168751107630133,
+        "edge_to_neighborhood_rms": 0.9003189788253313
+      },
+      {
+        "time_seconds": 23.94,
+        "jump": 0.017974853515625,
+        "edge_rms": 0.34968250422301866,
+        "neighborhood_rms": 0.3323172438726844,
+        "edge_to_neighborhood_rms": 1.0522550685241814
+      },
+      {
+        "time_seconds": 24.57,
+        "jump": 0.04205322265625,
+        "edge_rms": 0.17210903193713625,
+        "neighborhood_rms": 0.2074396991990872,
+        "edge_to_neighborhood_rms": 0.8296822286266292
+      }
+    ],
+    "median_join_jump_to_local_rms": 0.1941936437210988,
+    "median_midchunk_jump_to_local_rms": 0.1839935925371306
+  },
+  "bs": {
+    "frames": 1102500,
+    "sample_rate": 44100,
+    "channels": 2,
+    "peak": 0.789825439453125,
+    "finite": true,
+    "delta_p99": 0.213134765625,
+    "joins": [
+      {
+        "time_seconds": 0.63,
+        "jump": 0.079437255859375,
+        "edge_rms": 0.02394935342712431,
+        "neighborhood_rms": 0.03345573312334258,
+        "edge_to_neighborhood_rms": 0.715851998783864
+      },
+      {
+        "time_seconds": 1.26,
+        "jump": 0.014068603515625,
+        "edge_rms": 0.007466712318685006,
+        "neighborhood_rms": 0.012112914884269438,
+        "edge_to_neighborhood_rms": 0.6164257232899183
+      },
+      {
+        "time_seconds": 1.89,
+        "jump": 0.074798583984375,
+        "edge_rms": 0.1139627400964177,
+        "neighborhood_rms": 0.09555221253949854,
+        "edge_to_neighborhood_rms": 1.1926750523888578
+      },
+      {
+        "time_seconds": 2.52,
+        "jump": 0.11871337890625,
+        "edge_rms": 0.18031445705336946,
+        "neighborhood_rms": 0.16667232008717894,
+        "edge_to_neighborhood_rms": 1.0818500454007896
+      },
+      {
+        "time_seconds": 3.15,
+        "jump": 0.04736328125,
+        "edge_rms": 0.07751011310811577,
+        "neighborhood_rms": 0.07591986866849143,
+        "edge_to_neighborhood_rms": 1.0209463539323052
+      },
+      {
+        "time_seconds": 3.78,
+        "jump": 0.132171630859375,
+        "edge_rms": 0.2277602160343793,
+        "neighborhood_rms": 0.20491611384467995,
+        "edge_to_neighborhood_rms": 1.1114802626357363
+      },
+      {
+        "time_seconds": 4.41,
+        "jump": 0.04425048828125,
+        "edge_rms": 0.05573713741376489,
+        "neighborhood_rms": 0.09153617387325545,
+        "edge_to_neighborhood_rms": 0.6089083152081569
+      },
+      {
+        "time_seconds": 5.04,
+        "jump": 0.010894775390625,
+        "edge_rms": 0.13175605004380017,
+        "neighborhood_rms": 0.12129609367885634,
+        "edge_to_neighborhood_rms": 1.086234898814117
+      },
+      {
+        "time_seconds": 5.67,
+        "jump": 0.05767822265625,
+        "edge_rms": 0.08015048690172927,
+        "neighborhood_rms": 0.12231706404349887,
+        "edge_to_neighborhood_rms": 0.6552682369258458
+      },
+      {
+        "time_seconds": 6.3,
+        "jump": 0.016815185546875,
+        "edge_rms": 0.1274813146635617,
+        "neighborhood_rms": 0.12183372979695022,
+        "edge_to_neighborhood_rms": 1.0463548548995736
+      },
+      {
+        "time_seconds": 6.93,
+        "jump": 0.22308349609375,
+        "edge_rms": 0.1988469350203599,
+        "neighborhood_rms": 0.17966037828609036,
+        "edge_to_neighborhood_rms": 1.106793478435835
+      },
+      {
+        "time_seconds": 7.56,
+        "jump": 0.07635498046875,
+        "edge_rms": 0.12434801726547803,
+        "neighborhood_rms": 0.12154721847354902,
+        "edge_to_neighborhood_rms": 1.023042886765348
+      },
+      {
+        "time_seconds": 8.19,
+        "jump": 0.07037353515625,
+        "edge_rms": 0.1166232931042339,
+        "neighborhood_rms": 0.128913492791753,
+        "edge_to_neighborhood_rms": 0.9046632014899116
+      },
+      {
+        "time_seconds": 8.82,
+        "jump": 0.080718994140625,
+        "edge_rms": 0.11336384459025145,
+        "neighborhood_rms": 0.1367332386839048,
+        "edge_to_neighborhood_rms": 0.8290876869546115
+      },
+      {
+        "time_seconds": 9.45,
+        "jump": 0.22308349609375,
+        "edge_rms": 0.10916027218592891,
+        "neighborhood_rms": 0.12730190996741067,
+        "edge_to_neighborhood_rms": 0.8574912364934193
+      },
+      {
+        "time_seconds": 10.08,
+        "jump": 0.033477783203125,
+        "edge_rms": 0.21663599522772656,
+        "neighborhood_rms": 0.18486521016065957,
+        "edge_to_neighborhood_rms": 1.171859188862286
+      },
+      {
+        "time_seconds": 10.71,
+        "jump": 0.027984619140625,
+        "edge_rms": 0.14914427355157903,
+        "neighborhood_rms": 0.12122347143491825,
+        "edge_to_neighborhood_rms": 1.2303250499772294
+      },
+      {
+        "time_seconds": 11.34,
+        "jump": 0.178009033203125,
+        "edge_rms": 0.15744386644553876,
+        "neighborhood_rms": 0.17528809611244398,
+        "edge_to_neighborhood_rms": 0.8982005620309865
+      },
+      {
+        "time_seconds": 11.97,
+        "jump": 0.168670654296875,
+        "edge_rms": 0.12931268106685306,
+        "neighborhood_rms": 0.13966012733568903,
+        "edge_to_neighborhood_rms": 0.9259098035621527
+      },
+      {
+        "time_seconds": 12.6,
+        "jump": 0.162445068359375,
+        "edge_rms": 0.07636879094479566,
+        "neighborhood_rms": 0.12001867938966553,
+        "edge_to_neighborhood_rms": 0.6363075425688409
+      },
+      {
+        "time_seconds": 13.23,
+        "jump": 0.112762451171875,
+        "edge_rms": 0.15715929881563387,
+        "neighborhood_rms": 0.14963108084602278,
+        "edge_to_neighborhood_rms": 1.0503118598558943
+      },
+      {
+        "time_seconds": 13.86,
+        "jump": 0.174346923828125,
+        "edge_rms": 0.06267337538970612,
+        "neighborhood_rms": 0.07043737875142056,
+        "edge_to_neighborhood_rms": 0.889774385428023
+      },
+      {
+        "time_seconds": 14.49,
+        "jump": 6.103515625e-05,
+        "edge_rms": 3.5987323570730424e-05,
+        "neighborhood_rms": 0.00033901726025186915,
+        "edge_to_neighborhood_rms": 0.10615189192430509
+      },
+      {
+        "time_seconds": 15.12,
+        "jump": 0.002349853515625,
+        "edge_rms": 0.0021174818820137173,
+        "neighborhood_rms": 0.0020920381000533155,
+        "edge_to_neighborhood_rms": 1.0121621981739977
+      },
+      {
+        "time_seconds": 15.75,
+        "jump": 0.145111083984375,
+        "edge_rms": 0.039331535547025426,
+        "neighborhood_rms": 0.033034065580994025,
+        "edge_to_neighborhood_rms": 1.190635631893115
+      },
+      {
+        "time_seconds": 16.38,
+        "jump": 0.150177001953125,
+        "edge_rms": 0.1036987166789814,
+        "neighborhood_rms": 0.1086834959738465,
+        "edge_to_neighborhood_rms": 0.9541349010703094
+      },
+      {
+        "time_seconds": 17.01,
+        "jump": 0.05206298828125,
+        "edge_rms": 0.11684684848105391,
+        "neighborhood_rms": 0.11035131668788903,
+        "edge_to_neighborhood_rms": 1.058862295332066
+      },
+      {
+        "time_seconds": 17.64,
+        "jump": 0.167388916015625,
+        "edge_rms": 0.13184768879963377,
+        "neighborhood_rms": 0.1328205336800206,
+        "edge_to_neighborhood_rms": 0.9926754933636199
+      },
+      {
+        "time_seconds": 18.27,
+        "jump": 0.180755615234375,
+        "edge_rms": 0.13324161878718757,
+        "neighborhood_rms": 0.13247432528880962,
+        "edge_to_neighborhood_rms": 1.0057920166545868
+      },
+      {
+        "time_seconds": 18.9,
+        "jump": 0.086761474609375,
+        "edge_rms": 0.1803617159095085,
+        "neighborhood_rms": 0.1833316939722669,
+        "edge_to_neighborhood_rms": 0.983799974797551
+      },
+      {
+        "time_seconds": 19.53,
+        "jump": 0.24200439453125,
+        "edge_rms": 0.1883305502244722,
+        "neighborhood_rms": 0.18340471431021685,
+        "edge_to_neighborhood_rms": 1.0268577388143014
+      },
+      {
+        "time_seconds": 20.16,
+        "jump": 0.024200439453125,
+        "edge_rms": 0.09480992929879262,
+        "neighborhood_rms": 0.11078892411580102,
+        "edge_to_neighborhood_rms": 0.855770827774205
+      },
+      {
+        "time_seconds": 20.79,
+        "jump": 0.14166259765625,
+        "edge_rms": 0.12751156742926692,
+        "neighborhood_rms": 0.10825002946238746,
+        "edge_to_neighborhood_rms": 1.1779356371775591
+      },
+      {
+        "time_seconds": 21.42,
+        "jump": 0.04248046875,
+        "edge_rms": 0.024042283036985235,
+        "neighborhood_rms": 0.027233814962313665,
+        "edge_to_neighborhood_rms": 0.8828099577769442
+      },
+      {
+        "time_seconds": 22.05,
+        "jump": 0.010284423828125,
+        "edge_rms": 0.0020474228815890423,
+        "neighborhood_rms": 0.004381150572148151,
+        "edge_to_neighborhood_rms": 0.46732538584839295
+      },
+      {
+        "time_seconds": 22.68,
+        "jump": 0.050384521484375,
+        "edge_rms": 0.02873674342951615,
+        "neighborhood_rms": 0.029166732532186577,
+        "edge_to_neighborhood_rms": 0.9852575497719562
+      },
+      {
+        "time_seconds": 23.31,
+        "jump": 0.115478515625,
+        "edge_rms": 0.09579363999972872,
+        "neighborhood_rms": 0.11660128119694364,
+        "edge_to_neighborhood_rms": 0.8215487773065709
+      },
+      {
+        "time_seconds": 23.94,
+        "jump": 0.215728759765625,
+        "edge_rms": 0.1596220042798739,
+        "neighborhood_rms": 0.13466206679854095,
+        "edge_to_neighborhood_rms": 1.1853524015688388
+      },
+      {
+        "time_seconds": 24.57,
+        "jump": 0.051910400390625,
+        "edge_rms": 0.06255874037997435,
+        "neighborhood_rms": 0.08876235409915739,
+        "edge_to_neighborhood_rms": 0.7047891081177196
+      }
+    ],
+    "median_join_jump_to_local_rms": 1.1109784038599708,
+    "median_midchunk_jump_to_local_rms": 0.11101628172094521
+  },
+  "mel": {
+    "frames": 1102500,
+    "sample_rate": 44100,
+    "channels": 2,
+    "peak": 0.7921142578125,
+    "finite": true,
+    "delta_p99": 0.24346923828125,
+    "joins": [
+      {
+        "time_seconds": 0.63,
+        "jump": 0.116607666015625,
+        "edge_rms": 0.03430015785936628,
+        "neighborhood_rms": 0.03764648104678417,
+        "edge_to_neighborhood_rms": 0.911111926151628
+      },
+      {
+        "time_seconds": 1.26,
+        "jump": 0.052703857421875,
+        "edge_rms": 0.016324567662963908,
+        "neighborhood_rms": 0.01802242026498294,
+        "edge_to_neighborhood_rms": 0.9057921978815514
+      },
+      {
+        "time_seconds": 1.89,
+        "jump": 0.079437255859375,
+        "edge_rms": 0.1106023487568506,
+        "neighborhood_rms": 0.09317131294081134,
+        "edge_to_neighborhood_rms": 1.187085866516796
+      },
+      {
+        "time_seconds": 2.52,
+        "jump": 0.106414794921875,
+        "edge_rms": 0.18455564432171717,
+        "neighborhood_rms": 0.17118861614882436,
+        "edge_to_neighborhood_rms": 1.0780836277178154
+      },
+      {
+        "time_seconds": 3.15,
+        "jump": 0.144439697265625,
+        "edge_rms": 0.04692446193887057,
+        "neighborhood_rms": 0.06381877828352389,
+        "edge_to_neighborhood_rms": 0.7352767195009916
+      },
+      {
+        "time_seconds": 3.78,
+        "jump": 0.0947265625,
+        "edge_rms": 0.23296555931162957,
+        "neighborhood_rms": 0.21334993918539372,
+        "edge_to_neighborhood_rms": 1.0919410626557084
+      },
+      {
+        "time_seconds": 4.41,
+        "jump": 0.083892822265625,
+        "edge_rms": 0.09862826223793521,
+        "neighborhood_rms": 0.11400448521007679,
+        "edge_to_neighborhood_rms": 0.865126157591013
+      },
+      {
+        "time_seconds": 5.04,
+        "jump": 0.0909423828125,
+        "edge_rms": 0.1388866332609377,
+        "neighborhood_rms": 0.1262914135981523,
+        "edge_to_neighborhood_rms": 1.099731401398849
+      },
+      {
+        "time_seconds": 5.67,
+        "jump": 0.034881591796875,
+        "edge_rms": 0.08069258554668732,
+        "neighborhood_rms": 0.1250317209941617,
+        "edge_to_neighborhood_rms": 0.6453769083963518
+      },
+      {
+        "time_seconds": 6.3,
+        "jump": 0.01934814453125,
+        "edge_rms": 0.11239519139400414,
+        "neighborhood_rms": 0.11295733731094725,
+        "edge_to_neighborhood_rms": 0.9950233784690264
+      },
+      {
+        "time_seconds": 6.93,
+        "jump": 0.198974609375,
+        "edge_rms": 0.2048650502143015,
+        "neighborhood_rms": 0.18358246451655377,
+        "edge_to_neighborhood_rms": 1.1159292950652628
+      },
+      {
+        "time_seconds": 7.56,
+        "jump": 0.117095947265625,
+        "edge_rms": 0.13089007231831443,
+        "neighborhood_rms": 0.12173231614674627,
+        "edge_to_neighborhood_rms": 1.0752286365810098
+      },
+      {
+        "time_seconds": 8.19,
+        "jump": 0.076629638671875,
+        "edge_rms": 0.12478199344436865,
+        "neighborhood_rms": 0.1317545269527079,
+        "edge_to_neighborhood_rms": 0.9470793628909466
+      },
+      {
+        "time_seconds": 8.82,
+        "jump": 0.078369140625,
+        "edge_rms": 0.12001628783001263,
+        "neighborhood_rms": 0.14163846731824864,
+        "edge_to_neighborhood_rms": 0.8473424635437987
+      },
+      {
+        "time_seconds": 9.45,
+        "jump": 0.089569091796875,
+        "edge_rms": 0.14019804475591688,
+        "neighborhood_rms": 0.1703971085376149,
+        "edge_to_neighborhood_rms": 0.8227724399734658
+      },
+      {
+        "time_seconds": 10.08,
+        "jump": 0.06005859375,
+        "edge_rms": 0.2055240030038905,
+        "neighborhood_rms": 0.17915394297584655,
+        "edge_to_neighborhood_rms": 1.1471921833816359
+      },
+      {
+        "time_seconds": 10.71,
+        "jump": 0.0770263671875,
+        "edge_rms": 0.16283366467635574,
+        "neighborhood_rms": 0.12177099620242807,
+        "edge_to_neighborhood_rms": 1.3372122242119664
+      },
+      {
+        "time_seconds": 11.34,
+        "jump": 0.19183349609375,
+        "edge_rms": 0.1406072694269524,
+        "neighborhood_rms": 0.16419891702420455,
+        "edge_to_neighborhood_rms": 0.8563227576356395
+      },
+      {
+        "time_seconds": 11.97,
+        "jump": 0.111053466796875,
+        "edge_rms": 0.11840755937023502,
+        "neighborhood_rms": 0.13028514774329297,
+        "edge_to_neighborhood_rms": 0.908833903335928
+      },
+      {
+        "time_seconds": 12.6,
+        "jump": 0.232452392578125,
+        "edge_rms": 0.12836078434529172,
+        "neighborhood_rms": 0.1461714793027763,
+        "edge_to_neighborhood_rms": 0.8781520509853231
+      },
+      {
+        "time_seconds": 13.23,
+        "jump": 0.046234130859375,
+        "edge_rms": 0.137037297554884,
+        "neighborhood_rms": 0.14490188407678947,
+        "edge_to_neighborhood_rms": 0.9457247462859923
+      },
+      {
+        "time_seconds": 13.86,
+        "jump": 0.129669189453125,
+        "edge_rms": 0.06686781509443977,
+        "neighborhood_rms": 0.07102847958904011,
+        "edge_to_neighborhood_rms": 0.9414225882537074
+      },
+      {
+        "time_seconds": 14.49,
+        "jump": 0.015167236328125,
+        "edge_rms": 0.007512917207520389,
+        "neighborhood_rms": 0.011698385464850344,
+        "edge_to_neighborhood_rms": 0.642218298421961
+      },
+      {
+        "time_seconds": 15.12,
+        "jump": 0.15460205078125,
+        "edge_rms": 0.06240709485641523,
+        "neighborhood_rms": 0.07273531524429014,
+        "edge_to_neighborhood_rms": 0.8580026723856717
+      },
+      {
+        "time_seconds": 15.75,
+        "jump": 0.031982421875,
+        "edge_rms": 0.04258496728788029,
+        "neighborhood_rms": 0.045926967138166575,
+        "edge_to_neighborhood_rms": 0.9272322981782747
+      },
+      {
+        "time_seconds": 16.38,
+        "jump": 0.49627685546875,
+        "edge_rms": 0.1578736442718332,
+        "neighborhood_rms": 0.16439720850214135,
+        "edge_to_neighborhood_rms": 0.960318278578172
+      },
+      {
+        "time_seconds": 17.01,
+        "jump": 0.08642578125,
+        "edge_rms": 0.08635392783973526,
+        "neighborhood_rms": 0.11011859394391818,
+        "edge_to_neighborhood_rms": 0.7841902511370067
+      },
+      {
+        "time_seconds": 17.64,
+        "jump": 0.058502197265625,
+        "edge_rms": 0.07931668271020258,
+        "neighborhood_rms": 0.09755848557392063,
+        "edge_to_neighborhood_rms": 0.8130167482981668
+      },
+      {
+        "time_seconds": 18.27,
+        "jump": 0.175445556640625,
+        "edge_rms": 0.166065914463315,
+        "neighborhood_rms": 0.1706958054212715,
+        "edge_to_neighborhood_rms": 0.9728763636193046
+      },
+      {
+        "time_seconds": 18.9,
+        "jump": 0.074554443359375,
+        "edge_rms": 0.18787631657636172,
+        "neighborhood_rms": 0.1905274365025916,
+        "edge_to_neighborhood_rms": 0.9860853640037621
+      },
+      {
+        "time_seconds": 19.53,
+        "jump": 0.03289794921875,
+        "edge_rms": 0.20417391141789754,
+        "neighborhood_rms": 0.1895983311987874,
+        "edge_to_neighborhood_rms": 1.0768760997364903
+      },
+      {
+        "time_seconds": 20.16,
+        "jump": 0.069671630859375,
+        "edge_rms": 0.10378559339870666,
+        "neighborhood_rms": 0.1233678447874986,
+        "edge_to_neighborhood_rms": 0.8412694051474887
+      },
+      {
+        "time_seconds": 20.79,
+        "jump": 0.09405517578125,
+        "edge_rms": 0.09573931796388294,
+        "neighborhood_rms": 0.09530909076993156,
+        "edge_to_neighborhood_rms": 1.0045140205459508
+      },
+      {
+        "time_seconds": 21.42,
+        "jump": 0.09307861328125,
+        "edge_rms": 0.03984660424073458,
+        "neighborhood_rms": 0.03594316019849695,
+        "edge_to_neighborhood_rms": 1.1086004686477418
+      },
+      {
+        "time_seconds": 22.05,
+        "jump": 0.0125732421875,
+        "edge_rms": 0.0024565248066145333,
+        "neighborhood_rms": 0.0034711526474403382,
+        "edge_to_neighborhood_rms": 0.707697141589552
+      },
+      {
+        "time_seconds": 22.68,
+        "jump": 0.057037353515625,
+        "edge_rms": 0.04723014903867299,
+        "neighborhood_rms": 0.05745907624360434,
+        "edge_to_neighborhood_rms": 0.8219789131039169
+      },
+      {
+        "time_seconds": 23.31,
+        "jump": 0.1043701171875,
+        "edge_rms": 0.09234109453439979,
+        "neighborhood_rms": 0.11406423484374872,
+        "edge_to_neighborhood_rms": 0.8095534473263556
+      },
+      {
+        "time_seconds": 23.94,
+        "jump": 0.212005615234375,
+        "edge_rms": 0.1900675761760271,
+        "neighborhood_rms": 0.15718022063429243,
+        "edge_to_neighborhood_rms": 1.209233422685243
+      },
+      {
+        "time_seconds": 24.57,
+        "jump": 0.044403076171875,
+        "edge_rms": 0.06902347562658517,
+        "neighborhood_rms": 0.08769202338304571,
+        "edge_to_neighborhood_rms": 0.7871123616920681
+      }
+    ],
+    "median_join_jump_to_local_rms": 0.8946129006702419,
+    "median_midchunk_jump_to_local_rms": 0.12065682581767562
+  }
+}

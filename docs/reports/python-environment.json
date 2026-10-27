@@ -1,0 +1,9 @@
+﻿{
+  "python": "3.11.17",
+  "ffmpeg": "E:\\PJ_HOC_TAP\\tach-vocal\\.tools\\ffmpeg\\ffmpeg-9.0.2-essentials_build\\bin\\ffmpeg.EXE",
+  "ffprobe": "E:\\PJ_HOC_TAP\\tach-vocal\\.tools\\ffmpeg\\ffmpeg-9.0.2-essentials_build\\bin\\ffprobe.EXE",
+  "torch_installed": true,
+  "audio_separator_installed": true,
+  "torch_version": "2.14.1+cpu",
+  "cuda_available": false
+}

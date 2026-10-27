@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "selected_model_id": null,
+  "models": [
+    {
+      "id": "bs-roformer-viperx-1297",
+      "name": "BS-RoFormer Viperx 1297",
+      "status": "local_smoke_test_only",
+      "source_url": "https://github.com/TRvlvr/model_repo/releases/download/all_public_uvr_models/model_bs_roformer_ep_317_sdr_12.9755.ckpt",
+      "checkpoint_filename": "model_bs_roformer_ep_317_sdr_12.9755.ckpt",
+      "sha256": "5b84f37e8d444c8cb30c79d77f613a41c05868ff9c9ac6c7049c00aefae115aa",
+      "checkpoint_license_url": null,
+      "license_verified": false,
+      "available": false
+    },
+    {
+      "id": "mel-band-roformer-vocal",
+      "name": "Mel-RoFormer Viperx 1143",
+      "status": "local_smoke_test_only",
+      "source_url": "https://github.com/TRvlvr/model_repo/releases/download/all_public_uvr_models/model_mel_band_roformer_ep_3005_sdr_11.4360.ckpt",
+      "checkpoint_filename": "model_mel_band_roformer_ep_3005_sdr_11.4360.ckpt",
+      "sha256": "21b9d0958e35b8ebfbe2afe69bbd5444e5ffe2f5d80ae0d583b833d2f3c0d139",
+      "checkpoint_license_url": null,
+      "license_verified": false,
+      "available": false
+    }
+  ]
+}

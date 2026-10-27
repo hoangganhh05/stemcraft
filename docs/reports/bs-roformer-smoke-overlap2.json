@@ -1,0 +1,23 @@
+﻿{
+    "status":  "FAILED",
+    "model":  "model_bs_roformer_ep_317_sdr_12.9755.ckpt",
+    "checkpoint_sha256":  "5b84f37e8d444c8cb30c79d77f613a41c05868ff9c9ac6c7049c00aefae115aa",
+    "input_sha256":  "8aa9e1955fd11e5c013374d6fd354de3793cf528e2cb7d746a81b27f8a9b5df0",
+    "inference_config":  {
+                             "segment_size":  64,
+                             "override_model_segment_size":  true,
+                             "batch_size":  1,
+                             "overlap":  2,
+                             "pitch_shift":  0
+                         },
+    "inference_config_sha256":  "8d03f390f8e3df2cfa4a94b109df6cfed4a39241d4d0aeb587b574552ffebfa7",
+    "config_sha256":  "2bfdd16c656bd9519aba757cc4f8834b7ede675eb1e00ec4772d74ae1c41af7f",
+    "timeout_seconds":  900,
+    "rss_limit_mib":  3500,
+    "license_status":  "unverified_local_experiment_only",
+    "peak_rss_mib":  3.6484375,
+    "exit_code":  4294967295,
+    "elapsed_seconds":  359.875,
+    "error_code":  "STOPPED_FOR_CPU_RECONFIGURATION",
+    "memory_measurement_valid":  false
+}

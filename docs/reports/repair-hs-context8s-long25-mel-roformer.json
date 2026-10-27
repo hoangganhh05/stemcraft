@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETED",
+  "model": "model_mel_band_roformer_ep_3005_sdr_11.4360.ckpt",
+  "sample_id": "repair-hs-context8s-long25",
+  "input_path": "samples\\hoa-sua-justatee-045-070.wav",
+  "result_dir": "results\\repair-hs-context8s-long25",
+  "model_id": "mel-band-roformer-vocal",
+  "checkpoint_sha256": "21b9d0958e35b8ebfbe2afe69bbd5444e5ffe2f5d80ae0d583b833d2f3c0d139",
+  "input_sha256": "8f144b57aa152c313757694fa67d37a90f4f4052f72165bdb19d794905565df1",
+  "inference_config": {
+    "segment_size": 801,
+    "override_model_segment_size": true,
+    "batch_size": 1,
+    "overlap": 4,
+    "pitch_shift": 0
+  },
+  "inference_config_sha256": "83d9547b10da30846193630c1b860dde9e34cff0711063217469cf058c8f3483",
+  "config_sha256": "d9b083b48dfdd0bd10f8a29a9c18777b0419496d938827f48a1db31bf0193aa3",
+  "timeout_seconds": 1800,
+  "rss_limit_mib": 3500,
+  "license_status": "unverified_local_experiment_only",
+  "peak_rss_mib": 1830.98046875,
+  "elapsed_seconds": 1469.5939999999991,
+  "exit_code": 0
+}

@@ -1,0 +1,3 @@
+sample_id,relative_path,rights_basis,genre,vocal_type,features,start_seconds,duration_seconds,sha256
+smoke-001,shen-hello-viet-nam-030-055.wav,user_provided_for_requested_test,unclassified,unreviewed,source_excerpt_30s_to_55s,0,25,8aa9e1955fd11e5c013374d6fd354de3793cf528e2cb7d746a81b27f8a9b5df0
+smoke-002,hoa-sua-justatee-045-070.wav,user_provided_for_requested_test,unclassified,unreviewed,source_excerpt_45s_to_70s,0,25,8f144b57aa152c313757694fa67d37a90f4f4052f72165bdb19d794905565df1

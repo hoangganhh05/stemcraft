@@ -1,0 +1,2 @@
+date,sample_id,rater_id,preferred_blind_id,preferred_model_id,other_model_id,feedback,criterion_scores_supplied
+2026-10-26,smoke-001,user-001,A,mel-band-roformer-vocal,bs-roformer-viperx-1297,cái vocal a hơn,false
