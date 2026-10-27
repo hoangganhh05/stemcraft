@@ -3,8 +3,14 @@ import { resolve } from 'node:path';
 import { ROOT } from './config.mjs';
 
 export class Scheduler {
-  constructor({ store, storage, runner, logger = console }) {
-    Object.assign(this, { store, storage, runner, logger });
+  constructor({
+    store,
+    storage,
+    runner,
+    logger = console,
+    lockPath = resolve(ROOT, '.cache/backend-server.lock'),
+  }) {
+    Object.assign(this, { store, storage, runner, logger, lockPath });
     this.active = null;
     this.busy = false;
     this.stopped = true;
@@ -13,7 +19,6 @@ export class Scheduler {
     await this.storage.init();
     await mkdir(this.storage.root, { recursive: true });
     await mkdir(resolve(ROOT, '.cache'), { recursive: true });
-    this.lockPath = resolve(ROOT, '.cache/backend-server.lock');
     try {
       this.lock = await open(this.lockPath, 'wx');
     } catch (error) {

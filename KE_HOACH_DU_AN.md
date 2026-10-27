@@ -448,3 +448,14 @@ khóa chống chạy trùng và giới hạn tài nguyên. Worker nền đang x�
 đánh dấu full-track PASS khi chưa hoàn tất. Xem
 `docs/reports/full-track-running.md` và trạng thái live `--status`.
 Chưa xây hệ thống hoặc coi giấy phép weights đã được xác minh.
+
+### Epic 5 — QA local, 27/10/2026
+
+Đã triển khai trên nhánh `test/epic-05-quality-security` từ `develop`:
+bổ sung regression API/bảo mật/tài nguyên và kiểm tra WAV bằng fixture,
+runner `npm.cmd run test:qa` xuất báo cáo máy đọc được.
+Xem `docs/reports/epic-05-quality-security.md` và
+`docs/reports/epic-05-regression.json` cho kết quả chạy thực tế.
+QA-07 chưa DONE: có số đo CPU nhưng chưa có GPU CUDA để so sánh;
+không đánh dấu Epic 5 hoàn tất toàn bộ. Không đổi chất lượng model,
+không chạy lại toàn bài và không tự merge/push nhánh QA.

@@ -72,3 +72,14 @@ Các report benchmark cũ trong docs/reports giữ làm lịch sử. Cấu hình
 segment 64/overlap 1 chỉ dùng tái hiện lỗi, không dùng cho backend.
 Không commit audio, weights, output, cache, venv hoặc secrets.
 Giấy phép checkpoint vẫn chưa xác minh; chưa sẵn sàng public/redistribution.
+
+## Regression Epic 5
+
+```powershell
+npm.cmd run test:qa
+```
+
+Chạy check, API/MySQL fixture, supervisor, xác thực WAV, UI và build tuần tự;
+không nạp model. Test dùng database/storage/lock riêng, không cần tắt server dev.
+Báo cáo: [Epic 5](docs/reports/epic-05-quality-security.md).
+So sánh CPU/GPU chưa hoàn tất vì máy hiện tại không có CUDA.
