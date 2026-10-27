@@ -1,6 +1,6 @@
 # KẾ HOẠCH DỰ ÁN — VOCAL STUDIO AI
 
-> Phiên bản tài liệu: 1.1 · Ngày lập: 26/10/2026 · Cập nhật: 27/10/2026 · Trạng thái: Epic 3 backend local đã kiểm tra
+> Phiên bản tài liệu: 1.2 · Ngày lập: 26/10/2026 · Cập nhật: 27/10/2026 · Trạng thái: Epic 4 frontend local
 > Vị trí đích trên Windows: `E:\PJ_HOC_TAP\tach-vocal`
 > Công nghệ: React + Vite + Tailwind CSS · Node.js + Express · Python + PyTorch · MySQL 8 · FFmpeg
 > Ngân sách: ưu tiên miễn phí, mã nguồn mở; không mặc định có GPU/cloud miễn phí.
@@ -254,6 +254,15 @@ Xem [báo cáo Epic 3](docs/reports/epic-03-backend.md) và
 | BE-08 | Rate limit, sanitize log, error handler | P0 | Test abuse cases chính |
 
 ### EPIC-04 — Frontend React (Tuần 4–6)
+
+**27/10/2026 — FE-01–FE-06: DONE cho P0 local trên `feature/frontend`.**
+Đã có upload/drag-drop, tiến độ/hủy/reload, 3 player, download WAV có xác thực,
+giao diện responsive và hướng dẫn. Browser tests 4/4 và API tests 8/8 đạt;
+build production thành công. Không chạy thêm AI benchmark; FE-07 A/B P1 hoãn.
+Live QA kết nối backend thật tại 1280/768/375 px đạt, không tràn ngang và không
+có lỗi accessibility tự động được phát hiện trong màn hình đã kiểm tra.
+Chi tiết và kiểm tra live: [báo cáo Epic 4](docs/reports/epic-04-frontend.md),
+[hướng dẫn frontend](frontend/README.md).
 
 | ID | Task | Priority | Done when |
 |---|---|---|---|

@@ -191,6 +191,13 @@ test('upload → real MySQL queue → worker contract → authenticated Range do
   ).json();
   assert.equal(status.progress, 100);
   assert.equal(status.tokenHash, undefined);
+  const original = await fetch(
+    `${env.base}/jobs/${job.id}/preview?stem=original`,
+    { headers: { ...env.auth(job), Range: 'bytes=0-43' } },
+  );
+  assert.equal(original.status, 206);
+  assert.match(original.headers.get('content-type'), /audio\/wav/);
+  assert.equal((await original.arrayBuffer()).byteLength, 44);
   const range = await fetch(`${env.base}/jobs/${job.id}/preview?stem=vocals`, {
     headers: { ...env.auth(job), Range: 'bytes=0-43' },
   });

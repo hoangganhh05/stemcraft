@@ -8,7 +8,7 @@ import {
   createHash,
   timingSafeEqual,
 } from 'node:crypto';
-import { mkdir, stat } from 'node:fs/promises';
+import { mkdir, stat, open } from 'node:fs/promises';
 import { basename } from 'node:path';
 import { HttpError, probeAudio } from './probe.mjs';
 import { UUID } from './storage.mjs';
@@ -84,7 +84,16 @@ export function createApp({
   app.get('/api/v1/health', async (_req, res) => {
     try {
       await store.countPending();
-      res.json({ status: 'ok', scope: 'local_development' });
+      res.json({
+        status: 'ok',
+        scope: 'local_development',
+        limits: {
+          maxUploadBytes: config.maxUploadBytes,
+          maxDurationSeconds: config.maxDuration,
+          ttlHours: config.ttlHours,
+          formats: ['MP3', 'WAV', 'FLAC'],
+        },
+      });
     } catch {
       res.status(503).json({ status: 'unavailable' });
     }
@@ -199,13 +208,38 @@ export function createApp({
       new Date(req.job.expiresAt).getTime() <= Date.now()
     )
       throw new HttpError(410, 'JOB_EXPIRED');
-    if (req.job.status !== 'COMPLETED')
+    const original = !download && req.query.stem === 'original';
+    if (
+      original
+        ? !['QUEUED', 'PROCESSING', 'COMPLETED'].includes(req.job.status)
+        : req.job.status !== 'COMPLETED'
+    )
       throw new HttpError(409, 'RESULT_NOT_READY');
-    if (!['vocals', 'instrumental'].includes(req.query.stem))
+    if (
+      !['vocals', 'instrumental', ...(download ? [] : ['original'])].includes(
+        req.query.stem,
+      )
+    )
       throw new HttpError(400, 'INVALID_STEM');
     const path = await storage.result(req.job.id, req.query.stem);
     if (!(await stat(path)).size) throw new HttpError(409, 'RESULT_NOT_READY');
-    res.type('audio/wav');
+    if (original) {
+      const handle = await open(path, 'r');
+      try {
+        const header = Buffer.alloc(12);
+        await handle.read(header, 0, 12, 0);
+        const magic = header.toString('ascii');
+        res.type(
+          magic.startsWith('fLaC')
+            ? 'audio/flac'
+            : magic.slice(8) === 'WAVE'
+              ? 'audio/wav'
+              : 'audio/mpeg',
+        );
+      } finally {
+        await handle.close();
+      }
+    } else res.type('audio/wav');
     const done = (error) => {
       if (error) next(error);
     };

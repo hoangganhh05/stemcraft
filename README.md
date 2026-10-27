@@ -1,9 +1,8 @@
 # Stemcraft
 
 Dự án tách vocal/instrumental chạy local trên Windows. Đang triển khai
-**EPIC-03 — Backend Node.js** đã hoàn tất phạm vi local được kiểm tra,
-nhánh làm việc **develop** (27/10/2026).
-Chưa xây giao diện React.
+**EPIC-04 — Frontend React** (27/10/2026), triển khai ở `feature/frontend`
+và gộp local vào `develop`. Giao diện local kết nối backend Epic 3.
 
 ## Trạng thái
 
@@ -14,7 +13,19 @@ Chưa xây giao diện React.
   Python worker, status, token, Range preview/download, cancel và cleanup.
   8 API tests, 3 worker tests và một job AI thật qua API đều đạt.
   Xem [báo cáo Epic 3](docs/reports/epic-03-backend.md).
-- Epic 4: chưa bắt đầu frontend.
+- Epic 4: có giao diện upload → xử lý → nghe/tải WAV; xem
+  [báo cáo frontend](docs/reports/epic-04-frontend.md).
+
+## Mở giao diện
+
+Chạy backend như bên dưới, rồi mở terminal thứ hai:
+
+```powershell
+npm.cmd run dev:frontend
+```
+
+Mở **http://127.0.0.1:5173**. [Hướng dẫn frontend](frontend/README.md).
+Build: `npm.cmd run build:frontend`; kiểm tra UI: `npm.cmd run test:frontend`.
 
 ## Chạy backend
 
