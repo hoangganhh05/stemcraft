@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "scope": "Tracked and non-ignored working files; heuristic scan, not proof of absence of all secrets",
+  "filesScanned": 137,
+  "findings": [],
+  "generatedAt": "2026-10-27T06:47:18.704Z"
+}

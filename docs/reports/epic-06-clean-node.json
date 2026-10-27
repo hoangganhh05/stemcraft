@@ -1,0 +1,108 @@
+{
+  "generatedAt": "2026-10-27T06:45:09.941Z",
+  "scope": "Fresh Node installation on the same Windows host, offline cache, npm ci --ignore-scripts; not a different machine or full setup",
+  "checks": [
+    {
+      "name": "@prisma/client",
+      "version": "6.19.3",
+      "status": "PASS"
+    },
+    {
+      "name": "express",
+      "version": "5.3.0",
+      "status": "PASS"
+    },
+    {
+      "name": "express-rate-limit",
+      "version": "8.7.1",
+      "status": "PASS"
+    },
+    {
+      "name": "helmet",
+      "version": "8.3.0",
+      "status": "PASS"
+    },
+    {
+      "name": "multer",
+      "version": "2.5.0",
+      "status": "PASS"
+    },
+    {
+      "name": "react",
+      "version": "19.3.1",
+      "status": "PASS"
+    },
+    {
+      "name": "react-dom",
+      "version": "19.3.1",
+      "status": "PASS"
+    },
+    {
+      "name": "@axe-core/playwright",
+      "version": "4.14.0",
+      "status": "PASS"
+    },
+    {
+      "name": "@eslint/js",
+      "version": "10.0.1",
+      "status": "PASS"
+    },
+    {
+      "name": "@playwright/test",
+      "version": "1.64.1",
+      "status": "PASS"
+    },
+    {
+      "name": "@tailwindcss/vite",
+      "version": "4.3.3",
+      "status": "PASS"
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "version": "6.1.2",
+      "status": "PASS"
+    },
+    {
+      "name": "eslint",
+      "version": "10.13.0",
+      "status": "PASS"
+    },
+    {
+      "name": "eslint-plugin-react-hooks",
+      "version": "7.1.1",
+      "status": "PASS"
+    },
+    {
+      "name": "eslint-plugin-react-refresh",
+      "version": "0.5.7",
+      "status": "PASS"
+    },
+    {
+      "name": "globals",
+      "version": "17.13.0",
+      "status": "PASS"
+    },
+    {
+      "name": "prettier",
+      "version": "3.9.10",
+      "status": "PASS"
+    },
+    {
+      "name": "prisma",
+      "version": "6.19.3",
+      "status": "PASS"
+    },
+    {
+      "name": "tailwindcss",
+      "version": "4.3.3",
+      "status": "PASS"
+    },
+    {
+      "name": "vite",
+      "version": "8.3.5",
+      "status": "PASS"
+    }
+  ],
+  "lockSha256": "6d0d071818c0fae710891c072c9480375668d0ad5120ab259d9e12f8046fb610",
+  "status": "PASS"
+}

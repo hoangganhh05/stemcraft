@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-10-27T06:45:07.788Z",
+  "status": "BLOCKED",
+  "scope": "Browser → live API → real AI worker → preview/seek/download/reload, one-second clip; not quality or full-track acceptance",
+  "profileId": "mel-viperx1143-context8s-cpu",
+  "freeRamMiB": 494,
+  "minimumStartRamMiB": 2560,
+  "reason": "INSUFFICIENT_AVAILABLE_RAM",
+  "elapsedSeconds": 0
+}

@@ -83,3 +83,24 @@ Chạy check, API/MySQL fixture, supervisor, xác thực WAV, UI và build tuầ
 không nạp model. Test dùng database/storage/lock riêng, không cần tắt server dev.
 Báo cáo: [Epic 5](docs/reports/epic-05-quality-security.md).
 So sánh CPU/GPU chưa hoàn tất vì máy hiện tại không có CUDA.
+
+## Chạy local và kiểm tra phát hành
+
+```powershell
+npm.cmd run doctor
+npm.cmd run dev
+```
+
+`dev` chạy frontend/backend cùng terminal; Ctrl+C dừng hai server do lệnh tạo.
+Nếu đã chạy hai server riêng, dừng terminal cũ trước. Hướng dẫn cài máy mới và
+troubleshooting: [Setup Windows](docs/SETUP.md).
+
+```powershell
+npm.cmd run test:release
+npm.cmd run audit:release
+npm.cmd run release:check
+```
+
+[Trạng thái Epic 6](docs/reports/epic-06-local-release.md): chuẩn bị RC local,
+chưa nghiệm thu toàn bộ, **NO-GO public**. Script release:check không deploy/tag;
+exit code 0 không đồng nghĩa quyết định public GO.

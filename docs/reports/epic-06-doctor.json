@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-10-27T05:40:48.469Z",
+  "checks": [
+    {
+      "name": "configuration",
+      "status": "PASS"
+    },
+    {
+      "name": "python_ffmpeg_model_hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "python_dependencies",
+      "status": "PASS"
+    },
+    {
+      "name": "mysql_schema",
+      "status": "PASS"
+    }
+  ],
+  "warnings": [
+    "CPU_PROFILE_SLOW_FOR_FULL_TRACKS",
+    "WEIGHTS_LICENSE_UNVERIFIED"
+  ],
+  "scope": "Local prerequisites only; no inference, package installation or database migration",
+  "freeRamMiB": 1225,
+  "status": "PASS"
+}
