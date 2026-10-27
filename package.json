@@ -32,7 +32,10 @@
     "test:release": "node --test scripts/release.test.mjs",
     "release:check": "node scripts/release-readiness.mjs",
     "verify:release-demo": "node scripts/verify-release-demo.mjs --run",
-    "verify:clean-node": "node scripts/verify-clean-node.mjs"
+    "verify:clean-node": "node scripts/verify-clean-node.mjs",
+    "plan:fast": ".venv\\Scripts\\python.exe ai-worker/fast_experiment.py",
+    "experiment:fast": ".venv\\Scripts\\python.exe ai-worker/fast_experiment.py --run",
+    "test:fast": ".venv\\Scripts\\python.exe -m unittest discover -s ai-worker -p test_fast_experiment.py -v"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",

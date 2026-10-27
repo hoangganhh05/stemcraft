@@ -39,13 +39,14 @@ def validate_folder(value):
     return folder
 
 
-def infer(args, folder):
+def infer(args, folder, profile=None):
     import numpy as np
     import soundfile as sf
     import torch
     from audio_separator.separator import Separator
 
-    profile = json.loads((ROOT / 'config/ai-profile.json').read_text(encoding='utf-8'))
+    if profile is None:
+        profile = json.loads((ROOT / 'config/ai-profile.json').read_text(encoding='utf-8'))
     checkpoint = ROOT / 'models' / profile['checkpoint_filename']
     if checkpoint.name != profile['checkpoint_filename']:
         raise RuntimeError('Invalid checkpoint path')

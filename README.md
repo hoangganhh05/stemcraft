@@ -104,3 +104,10 @@ npm.cmd run release:check
 [Trạng thái Epic 6](docs/reports/epic-06-local-release.md): chuẩn bị RC local,
 chưa nghiệm thu toàn bộ, **NO-GO public**. Script release:check không deploy/tag;
 exit code 0 không đồng nghĩa quyết định public GO.
+
+## Thử nghiệm chế độ Nhanh — Epic 7
+
+`npm.cmd run plan:fast` chỉ tính số cửa sổ; `npm.cmd run experiment:fast`
+thử cùng model/context 8 giây với overlap 2 khi đủ RAM. Chưa mở lựa chọn này
+trên giao diện và chưa có số đo tăng tốc được nghiệm thu.
+Xem [Epic 7](docs/reports/epic-07-fast-mode.md).

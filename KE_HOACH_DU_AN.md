@@ -474,3 +474,27 @@ Demo mới browser → AI thật đã kiểm tra điều kiện, BLOCKED vì 494
 chưa tạo job. Công cụ `verify:release-demo` đã có để chạy tiếp khi đủ 2,5 GiB.
 Readiness phải xét cả demo/clean Node, không dùng fixture PASS thay nghiệm thu.
 Chi tiết: `docs/reports/epic-06-real-demo.json` và báo cáo Epic 6.
+
+
+## 14. EPIC-07 ? T?c ?? t?ch v? ch? ?? Nhanh
+
+Ph?m vi do ng??i d?ng ch?n ng?y 27/10/2026. Nh?nh `feature/epic-07-fast-separation`
+t? develop `419e8a8`. Kh?ng coi merge Epic 6 l? ?? v??t c?c gate demo/license/GPU.
+
+| ID | Task | Done when | Tr?ng th?i |
+|---|---|---|---|
+| PERF-01 | Ghi baseline v? nguy?n nh?n ch?m | C? c?u h?nh, th?i gian/RSS th?c v? gi?i h?n m?y | DONE t? b?ng ch?ng CPU hi?n c? |
+| PERF-02 | Candidate Nhanh c? guard | C?ng checkpoint/context 8s, overlap 2; kh?ng thay c?u h?nh ?? ch?p nh?n | DONE c?ng c? th?, ch?a nghi?m thu audio |
+| PERF-03 | ?o tr?n c?ng ?o?n ng?n | Th?i gian, RSS, s? chunk, ?? frames/kh?ng clip | BLOCKED thi?u RAM |
+| PERF-04 | WAV A/B c?ng m?c nghe | Gi? ph? ?m/n?t d?i/?o?n n?i; ng??i d?ng ch?n | Ch? PERF-03 |
+| PERF-05 | Mode API/UI | Ch? m? Nhanh khi c? b?ng ch?ng v? ph?n h?i ch?p nh?n; Quality m?c ??nh | Ch?a tri?n khai |
+| PERF-06 | Xem l?i capacity | Quy?t ??nh CPU nh? h?n ho?c GPU t? k?t qu? th?c | Ch? s? ?o |
+
+Candidate 801/2 gi?m s? c?a s? d? ki?n tr?n 25 gi?y t? 10 xu?ng 6, kh?ng
+??ng ngh?a nhanh h?n 40% v? kh?ng b?o ??m gi?m RAM. Kh?ng d?ng model/weights m?i,
+kh?ng gate/denoise ho?c gi?m context g?y l?i gi?t c?. N?u ??i model ph?i ki?m tra
+t?i li?u/y?u c?u ph?n c?ng tr??c v? ???c nghe nghi?m thu l?i.
+
+Ch?y `npm.cmd run plan:fast`, `npm.cmd run test:fast`, `npm.cmd run experiment:fast`.
+L??t hi?n t?i BLOCKED v?i 807 MiB RAM kh? d?ng, ng??ng kh?i ??ng 2304 MiB.
+Ch?a t?o WAV ho?c c?ng b? t?ng t?c. Xem `docs/reports/epic-07-fast-mode.md`.
