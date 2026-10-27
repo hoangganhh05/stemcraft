@@ -459,3 +459,18 @@ Xem `docs/reports/epic-05-quality-security.md` và
 QA-07 chưa DONE: có số đo CPU nhưng chưa có GPU CUDA để so sánh;
 không đánh dấu Epic 5 hoàn tất toàn bộ. Không đổi chất lượng model,
 không chạy lại toàn bài và không tự merge/push nhánh QA.
+
+### Epic 6 — Chuẩn bị RC local, 27/10/2026
+
+Nhánh `chore/epic-06-local-release` tiếp nối nhánh Epic 5 đã push.
+Đã bổ sung setup/doctor/dev launcher, audit, release checks và tài liệu Windows.
+Xem `docs/reports/epic-06-local-release.md`. Chưa đánh dấu toàn bộ Epic DONE:
+clean-machine setup và demo mới browser → AI thật còn chờ xác minh;
+QA-07 GPU/license/capacity vẫn là gate thiếu. Quyết định public: NO-GO.
+Không tự merge/push Epic 6 hoặc tạo tag phát hành.
+
+Cập nhật nghiệm thu Epic 6: cài Node riêng đã PASS; 4 test release và check PASS.
+Demo mới browser → AI thật đã kiểm tra điều kiện, BLOCKED vì 494 MiB RAM trống,
+chưa tạo job. Công cụ `verify:release-demo` đã có để chạy tiếp khi đủ 2,5 GiB.
+Readiness phải xét cả demo/clean Node, không dùng fixture PASS thay nghiệm thu.
+Chi tiết: `docs/reports/epic-06-real-demo.json` và báo cáo Epic 6.

@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-10-27T06:51:10.719Z",
+  "candidate": "local-development-candidate",
+  "checks": {
+    "audit": "PASS",
+    "regression": "PASS",
+    "doctor": "PASS",
+    "cleanNode": "PASS",
+    "realBrowserDemo": "BLOCKED"
+  },
+  "localDecision": "NOT_ACCEPTED",
+  "publicDecision": "NO_GO",
+  "blockers": [
+    "WEIGHTS_LICENSE_UNVERIFIED",
+    "CPU_GPU_COMPARISON_NOT_AVAILABLE",
+    "FULL_TRACK_CAPACITY_NOT_VERIFIED",
+    "CLEAN_WINDOWS_SETUP_NOT_VERIFIED",
+    "FRESH_BROWSER_TO_REAL_AI_DEMO_NOT_ACCEPTED"
+  ],
+  "localScope": "Short clips on current Windows host only; no clean-machine or full-track certification"
+}
