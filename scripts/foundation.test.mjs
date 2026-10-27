@@ -54,7 +54,13 @@ test('private audio, weights, local environments and secrets are ignored by Git'
   assert.equal(
     execFileSync(
       'git',
-      ['check-ignore', '--non-matching', '--verbose', '.env.example'],
+      [
+        'check-ignore',
+        '--no-index',
+        '--non-matching',
+        '--verbose',
+        '.env.example',
+      ],
       { encoding: 'utf8', windowsHide: true },
     ).includes('!.env.example'),
     true,

@@ -6,12 +6,16 @@
   "scripts": {
     "check:environment": "node scripts/check-environment.mjs",
     "lint": "eslint .",
-    "format": "prettier --write \"scripts/**/*.mjs\" \"backend/**/*.mjs\" eslint.config.mjs package.json .prettierrc.json",
-    "format:check": "prettier --check \"scripts/**/*.mjs\" \"backend/**/*.mjs\" eslint.config.mjs package.json .prettierrc.json",
+    "format": "prettier --write \"scripts/**/*.mjs\" \"backend/**/*.mjs\" \"frontend/src/**/*.{jsx,mjs,css}\" \"frontend/public/*.js\" frontend/index.html frontend/vite.config.mjs frontend/playwright.config.mjs \"frontend/test/**/*.mjs\" eslint.config.mjs package.json .prettierrc.json",
+    "format:check": "prettier --check \"scripts/**/*.mjs\" \"backend/**/*.mjs\" \"frontend/src/**/*.{jsx,mjs,css}\" \"frontend/public/*.js\" frontend/index.html frontend/vite.config.mjs frontend/playwright.config.mjs \"frontend/test/**/*.mjs\" eslint.config.mjs package.json .prettierrc.json",
     "test": "node --test scripts/foundation.test.mjs",
     "test:python": ".venv\\Scripts\\python.exe -m unittest discover -s ai-worker -p test_validate_samples.py -v",
     "check:ai": "node scripts/validate-ai-profile.mjs",
     "dev:backend": "node backend/src/server.mjs",
+    "dev:frontend": "vite --config frontend/vite.config.mjs",
+    "build:frontend": "vite build --config frontend/vite.config.mjs",
+    "preview:frontend": "vite preview --config frontend/vite.config.mjs",
+    "test:frontend": "playwright test --config frontend/playwright.config.mjs",
     "db:generate": "prisma generate --schema backend/prisma/schema.prisma",
     "db:init": "node scripts/init-dev-database.mjs",
     "db:migrate": "prisma migrate deploy --schema backend/prisma/schema.prisma",
@@ -22,17 +26,27 @@
     "check": "npm run lint && npm run format:check && npm test && node scripts/validate-preparation.mjs && npm run check:ai"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
     "@eslint/js": "10.0.1",
+    "@playwright/test": "1.64.1",
+    "@tailwindcss/vite": "4.3.3",
+    "@vitejs/plugin-react": "6.1.2",
     "eslint": "10.13.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-react-refresh": "0.5.7",
     "globals": "17.13.0",
     "prettier": "3.9.10",
-    "prisma": "6.19.3"
+    "prisma": "6.19.3",
+    "tailwindcss": "4.3.3",
+    "vite": "8.3.5"
   },
   "dependencies": {
     "@prisma/client": "6.19.3",
     "express": "5.3.0",
     "express-rate-limit": "8.7.1",
     "helmet": "8.3.0",
-    "multer": "2.5.0"
+    "multer": "2.5.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
   }
 }

@@ -86,10 +86,14 @@ export class Storage {
     const filename = {
       vocals: 'vocals_raw.wav',
       instrumental: 'instrumental.wav',
+      original: 'input.upload',
     }[stem];
     if (!filename) return null;
     const folder = await this.safeFolder(id);
-    const path = resolve(folder, 'stems', filename);
+    const path =
+      stem === 'original'
+        ? resolve(folder, filename)
+        : resolve(folder, 'stems', filename);
     const actual = await realpath(path);
     if (
       !inside(folder, actual) ||

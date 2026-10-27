@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "backend": {
+    "status": "ok",
+    "scope": "local_development",
+    "limits": {
+      "maxUploadBytes": 52428800,
+      "maxDurationSeconds": 600,
+      "ttlHours": 24,
+      "formats": [
+        "MP3",
+        "WAV",
+        "FLAC"
+      ]
+    }
+  },
+  "viewports": [
+    {
+      "width": 1280,
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 375,
+      "overflow": false,
+      "accessibilityViolations": 0
+    }
+  ],
+  "consoleErrors": [],
+  "jobsSubmitted": 0
+}

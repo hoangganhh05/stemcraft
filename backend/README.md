@@ -1,7 +1,7 @@
 # Backend local — Epic 3
 
 Express 5 + Prisma 6/MySQL 8 + Python worker. Nhánh làm việc: `develop`.
-Chưa có giao diện React; API chỉ bind loopback trên máy hiện tại.
+Có [giao diện React](../frontend/README.md) ở cổng 5173; API chỉ bind loopback trên máy hiện tại.
 
 ## Chạy
 
@@ -30,7 +30,7 @@ sai model sẽ không nhận job. Không tự tải model hay đổi cấu hình
 | GET | `/api/v1/models` | Model local, ghi rõ chưa xác minh giấy phép/public |
 | POST | `/api/v1/jobs` | Multipart một field `file`; 202 + id + token chỉ trả lần tạo |
 | GET | `/api/v1/jobs/:id` | Status, số chunk thực tế, progress, errorCode, expiry |
-| GET | `/api/v1/jobs/:id/preview?stem=vocals` | WAV, hỗ trợ Range; stem instrumental cũng hợp lệ |
+| GET | `/api/v1/jobs/:id/preview?stem=vocals` | WAV, hỗ trợ Range; instrumental cũng hợp lệ; original trả định dạng nguồn |
 | GET | `/api/v1/jobs/:id/download?stem=instrumental` | WAV attachment |
 | DELETE | `/api/v1/jobs/:id` | Hủy/xóa audio của riêng job, 202 |
 
