@@ -23,7 +23,9 @@
     "test:backend": "node scripts/test-backend.mjs",
     "verify:backend-ai": "node scripts/verify-backend-ai.mjs --run",
     "test:worker": ".venv\\Scripts\\python.exe -m unittest discover -s ai-worker -p test_job_worker.py -v",
-    "check": "npm run lint && npm run format:check && npm test && node scripts/validate-preparation.mjs && npm run check:ai"
+    "check": "npm run lint && npm run format:check && npm test && node scripts/validate-preparation.mjs && npm run check:ai",
+    "test:qa": "node scripts/test-qa.mjs",
+    "test:audio-output": ".venv\\Scripts\\python.exe -m unittest discover -s ai-worker -p test_audio_output.py -v"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",

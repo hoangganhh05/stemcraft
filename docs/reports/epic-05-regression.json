@@ -1,0 +1,44 @@
+{
+  "startedAt": "2026-10-27T05:23:27.780Z",
+  "scope": "Local regression with synthetic fixtures; no model inference or GPU benchmark",
+  "suites": [
+    {
+      "name": "checks",
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 19.33
+    },
+    {
+      "name": "api",
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 29.68
+    },
+    {
+      "name": "worker",
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 3.12
+    },
+    {
+      "name": "wav",
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 3.22
+    },
+    {
+      "name": "frontend",
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 63.38
+    },
+    {
+      "name": "build",
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 6.51
+    }
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-10-27T05:25:33.016Z"
+}

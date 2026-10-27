@@ -121,7 +121,13 @@ async function setup(t, options = {}) {
       running--;
     }
   };
-  const scheduler = new Scheduler({ store, storage, runner, logger: quiet });
+  const scheduler = new Scheduler({
+    store,
+    storage,
+    runner,
+    logger: quiet,
+    lockPath: resolve(root, 'scheduler.lock'),
+  });
   await scheduler.start();
   const app = createApp({ config, store, storage, scheduler, logger: quiet });
   const server = app.listen(0, '127.0.0.1');
@@ -332,6 +338,7 @@ test('storage lock prevents a second scheduler from starting', async (t) => {
   const other = new Scheduler({
     store: env.store,
     storage: new Storage(resolve(env.storage.root, 'different-storage')),
+    lockPath: env.scheduler.lockPath,
     runner: async () => {},
     logger: quiet,
   });
@@ -375,4 +382,134 @@ test('configuration rejects unsafe host, storage and concurrency', () => {
   ]) {
     assert.throws(() => loadConfig({ ...env, ...extra }));
   }
+});
+
+test('tokens cannot read, cancel or download another job; no storage routes leak files', async (t) => {
+  const env = await setup(t);
+  const first = await (await env.upload()).json();
+  const second = await (await env.upload()).json();
+  for (const [suffix, method] of [
+    ['', 'GET'],
+    ['', 'DELETE'],
+    ['/preview?stem=original', 'GET'],
+    ['/download?stem=vocals', 'GET'],
+  ]) {
+    const response = await fetch(`${env.base}/jobs/${second.id}${suffix}`, {
+      method,
+      headers: env.auth(first),
+    });
+    assert.equal(response.status, 404);
+    assert.equal((await response.json()).error, 'JOB_NOT_FOUND');
+  }
+  for (const path of [
+    '/jobs/not-a-uuid',
+    `/jobs/${first.id}/download?token=${first.token}`,
+    '/jobs/%2e%2e%2f.env',
+    `/storage/${first.id}/input.upload`,
+    '/.env',
+  ]) {
+    const response = await fetch(`${env.base}${path}`);
+    assert.equal(response.status, 404);
+    const body = await response.text();
+    assert.ok(!body.includes(first.token));
+    assert.ok(!body.includes('tokenHash'));
+  }
+  assert.notEqual((await env.store.get(second.id)).status, 'CANCELLED');
+});
+
+test('upload rate limit rejects request seven and preserves bounded disk usage', async (t) => {
+  const env = await setup(t);
+  for (let i = 0; i < 6; i++)
+    assert.equal((await env.upload(Buffer.from('invalid'))).status, 415);
+  const response = await env.upload();
+  assert.equal(response.status, 429);
+  assert.equal((await response.json()).error, 'UPLOAD_RATE_LIMITED');
+  assert.ok(response.headers.get('ratelimit'));
+  assert.equal(await env.store.countPending(), 0);
+  assert.deepEqual(
+    (await readdir(env.storage.root)).filter((name) => !name.endsWith('.lock')),
+    [],
+  );
+});
+
+test('reject WAV with unsupported A-law codec and missing multipart file', async (t) => {
+  const env = await setup(t);
+  const data = wav();
+  data.writeUInt16LE(6, 20); // WAVE_FORMAT_ALAW: real header, unsupported decoder profile.
+  const response = await env.upload(data);
+  assert.equal(response.status, 415);
+  assert.equal((await response.json()).error, 'UNSUPPORTED_AUDIO');
+  const missing = await fetch(`${env.base}/jobs`, {
+    method: 'POST',
+    body: new FormData(),
+  });
+  assert.equal(missing.status, 400);
+  assert.equal((await missing.json()).error, 'FILE_REQUIRED');
+  assert.equal(await env.store.countPending(), 0);
+});
+
+test('OOM is terminal and preserves diagnostics without leaving downloadable audio', async (t) => {
+  const env = await setup(t, { failCode: 'MEMORY_LIMIT' });
+  const job = await (await env.upload()).json();
+  await waitFor(async () => (await env.store.get(job.id)).status === 'FAILED');
+  assert.equal((await env.store.get(job.id)).errorCode, 'MEMORY_LIMIT');
+  await waitFor(async () => {
+    try {
+      await access(env.storage.folder(job.id));
+      return false;
+    } catch {
+      return true;
+    }
+  });
+  assert.ok(
+    await readFile(
+      resolve(env.storage.root, 'diagnostics', job.id, 'progress.json'),
+      'utf8',
+    ),
+  );
+  assert.equal(
+    (
+      await fetch(`${env.base}/jobs/${job.id}/download?stem=vocals`, {
+        headers: env.auth(job),
+      })
+    ).status,
+    409,
+  );
+});
+
+test('malformed progress cannot overwrite state; completion remains below 100 until published', async (t) => {
+  const env = await setup(t, { delay: 5000 });
+  const job = await (await env.upload()).json();
+  await waitFor(() => env.runs.includes(job.id));
+  for (const value of [
+    null,
+    { completed_chunks: -1, total_chunks: 2 },
+    { completed_chunks: 3, total_chunks: 2 },
+    { completed_chunks: 1, total_chunks: 0 },
+    { completed_chunks: 0.5, total_chunks: 2 },
+  ]) {
+    await writeFile(
+      resolve(env.storage.folder(job.id), 'progress.json'),
+      JSON.stringify(value),
+    );
+    await env.scheduler.syncProgress(job.id);
+    assert.equal((await env.store.get(job.id)).progress, 0);
+  }
+  await writeFile(
+    resolve(env.storage.folder(job.id), 'progress.json'),
+    JSON.stringify({ completed_chunks: 2, total_chunks: 2 }),
+  );
+  await env.scheduler.syncProgress(job.id);
+  assert.equal((await env.store.get(job.id)).progress, 99);
+  assert.equal((await env.store.get(job.id)).status, 'PROCESSING');
+  await env.scheduler.cancel(job.id);
+});
+
+test('global API rate limit blocks request 181 even for invalid routes', async (t) => {
+  const env = await setup(t);
+  for (let i = 0; i < 180; i++)
+    assert.equal((await fetch(`${env.base}/unknown`)).status, 404);
+  const response = await fetch(`${env.base}/health`);
+  assert.equal(response.status, 429);
+  assert.equal((await response.json()).error, 'RATE_LIMITED');
 });

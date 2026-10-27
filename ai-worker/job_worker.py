@@ -108,23 +108,30 @@ def infer(args, folder):
     metadata = []
     for filename in ['vocals_raw.wav', 'instrumental.wav']:
         path = partial / filename
-        output = sf.info(path)
-        if output.frames != info.frames or output.channels != 2 or output.samplerate != 44100:
-            raise RuntimeError('Output frames/rate/channels mismatch')
-        peak = 0.0
-        for block in sf.blocks(path, blocksize=44100 * 5, dtype='float32', always_2d=True):
-            if not np.isfinite(block).all():
-                raise RuntimeError('Nonfinite WAV')
-            peak = max(peak, float(np.max(np.abs(block))))
-        if not 0 < peak < 1:
-            raise RuntimeError('Silent or clipped WAV')
-        metadata.append({'file': filename, 'frames': output.frames, 'sample_rate': output.samplerate,
-                         'channels': output.channels, 'peak': peak, 'sha256': sha256(path)})
+        metadata.append(validate_output(path, info.frames))
     atomic_json(folder / 'output-metadata.json', {'profile': profile, 'duration_seconds': info.duration,
                                                  'outputs': metadata})
     partial.rename(folder / 'stems')
     progress['stage'] = 'COMPLETED'
     atomic_json(folder / 'progress.json', progress)
+
+
+def validate_output(path, expected_frames):
+    """Validate exported PCM before publishing; block reads bound memory usage."""
+    import numpy as np
+    import soundfile as sf
+    output = sf.info(path)
+    if output.format != 'WAV' or output.frames != expected_frames or output.frames <= 0 or output.channels != 2 or output.samplerate != 44100:
+        raise RuntimeError('Output frames/rate/channels mismatch')
+    peak = 0.0
+    for block in sf.blocks(path, blocksize=44100 * 5, dtype='float32', always_2d=True):
+        if not np.isfinite(block).all():
+            raise RuntimeError('Nonfinite WAV')
+        peak = max(peak, float(np.max(np.abs(block))))
+    if not 0 < peak < 1:
+        raise RuntimeError('Silent or clipped WAV')
+    return {'file': path.name, 'frames': output.frames, 'sample_rate': output.samplerate,
+            'channels': output.channels, 'peak': peak, 'sha256': sha256(path)}
 
 
 def supervise(args, folder, child_command=None):
